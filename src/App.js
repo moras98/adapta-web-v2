@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './routes/Layout/Layout';
+import Home from './routes/Home/Home';
+
+import en from './locales/en'; 
+import es from './locales/es'; 
+import Experience from './routes/Experience/Experience';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout lenguage={'es'}/>}>
+          <Route index element={<Home lenguaje={es}/>}/>
+          <Route path='experiencia' element={<Experience lenguage={es}/>}/>
+        </Route>
+        <Route path='/en' element={<Layout lenguage={'en'}/>}>
+          <Route index element={<Home lenguaje={en}/>}/>
+          <Route path='experience' element={<Experience lenguage={en}/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

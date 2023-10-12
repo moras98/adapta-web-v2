@@ -1,0 +1,12 @@
+.overlay {
+	position: relative;
+	background: rgba(0, 0, 0, 0.15); /* Color de fondo del overlay */
+	color: #fff; /* Color de texto del overlay */
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+}
+.overlay h1, .overlay h2 {
+	margin-left: 10%;
+}

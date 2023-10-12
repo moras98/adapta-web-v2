@@ -1,0 +1,31 @@
+.service-grid-element{
+	max-width: 300px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    /* border: 2px solid transparent;
+    border-radius: 16px;
+    transition: all 0.5s ease; */
+    padding: 5px;
+}
+.icon {
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.icon img {
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(29%) sepia(92%) saturate(3314%) hue-rotate(115deg) brightness(83%) contrast(106%);
+}
+
+.service-description {
+    text-align: justify;
+}
+
+.service-description h2 {
+    color: green;
+}
+

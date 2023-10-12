@@ -1,0 +1,12 @@
+.img-container {
+	position: sticky;
+	top: 0;
+	height: 60vh;
+	width: 100%;
+	overflow: hidden;
+	object-fit: contain;
+}
+.img-container img {
+	position: absolute;
+	width: 100%;
+}
