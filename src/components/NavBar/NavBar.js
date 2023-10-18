@@ -51,6 +51,30 @@ function EnNavbar(){
 				Experience
 				</NavLink>
 			</li>
+			<li>
+				<NavLink 
+				className={location.pathname === '/en/about-us' ? "active-link" : ""}
+				to="/en/about-us"
+			>
+				About us
+				</NavLink>
+			</li>
+			<li>
+				<NavLink 
+				className={location.pathname === '/en/team' ? "active-link" : ""}
+				to="/en/team"
+			>
+				Team
+				</NavLink>
+			</li>
+			<li>
+				<NavLink 
+				className={location.pathname === '/en/contact' ? "active-link" : ""}
+				to="/en/contact"
+			>
+				Contact
+				</NavLink>
+			</li>
 		</ul>
 	);
 }
@@ -72,6 +96,30 @@ function EsNavbar(){
 				className={location.pathname === '/experiencia' ? "active-link" : ""}
 				>
 				Experiencia
+				</NavLink>
+			</li>
+			<li>
+				<NavLink 
+				to="sobre-nosotros"
+				className={location.pathname === '/sobre-nosotros' ? "active-link" : ""}
+				>
+				Sobre nosotros
+				</NavLink>
+			</li>
+			<li>
+				<NavLink 
+				to="equipo"
+				className={location.pathname === '/equipo' ? "active-link" : ""}
+				>
+				Equipo
+				</NavLink>
+			</li>
+			<li>
+				<NavLink 
+				to="contacto"
+				className={location.pathname === '/contacto' ? "active-link" : ""}
+				>
+				Contacto
 				</NavLink>
 			</li>
 		</ul>

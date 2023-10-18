@@ -16,7 +16,7 @@ export default function Home({lenguaje}){
 				</div>
 				<div className="experience-section">
 					<h2>Nuestra Experiencia</h2>
-					<ExperienceGrid lenguage={lenguaje}/>
+					<ExperienceGrid areas={lenguaje.areas}/>
 				</div>
 				<div className="services-section">
 					<h2>Nuestros Servicios</h2>

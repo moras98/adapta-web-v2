@@ -1,0 +1,38 @@
+.project-grid-element {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border-bottom: 3px solid green;
+}
+
+.project-texts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 100%;
+	overflow: hidden;
+	gap: 5px;
+}
+
+.project-texts p {
+	text-align: justify;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.project-title {
+	color: green;
+}
+
+.project-client {
+	overflow: hidden;
+	object-fit: contain;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-client img {
+	height: 150px;
+	width: auto;
+}

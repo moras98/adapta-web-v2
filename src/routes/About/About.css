@@ -1,0 +1,38 @@
+/* .about-section {
+    display: flex;
+    padding: 5% 10%;
+    justify-content: center;
+    text-align: center;
+    min-height: 10vh;
+    text-align: justify;
+    background-color: green;
+    color: white;
+} */
+
+.about-section {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: justify;
+    background-color: green;
+}
+
+.about-img {
+    overflow: hidden;
+}
+
+.about-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.about-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 10%;
+    color: white;
+}

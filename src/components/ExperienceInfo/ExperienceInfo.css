@@ -1,0 +1,22 @@
+.experience-info-container {
+	margin: 0% 10%;
+	margin-top: 10%;
+	width: 80%;
+	background-color: white;
+}
+
+.experience-info-img {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.experience-info-img img {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: -25%;
+}
+

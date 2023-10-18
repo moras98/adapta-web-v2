@@ -7,7 +7,7 @@
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
 }
 
 h2 {
@@ -15,7 +15,9 @@ h2 {
 }
 
 p {
-  font-family: 16px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
 }
 
 .body {

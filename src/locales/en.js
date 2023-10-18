@@ -1,9 +1,13 @@
+import { areas_en } from "./areas";
+import { about } from "./routes/en/about";
+
 const en = {
   main_title: 'ADAPTA ENGLISH',
   sub_title: 'Energy|Industry|...',
   experience_title: 'Experience',
   phrase_href: 'experience',
   phrease: 'Phrase',
+  areas: areas_en,
   area1 : {
     title: 'Area 1',
     src: '/assets/images/area-agro-industrial-845x321.jpg'
@@ -70,6 +74,7 @@ const en = {
       text: 'Texto Servicio'
     },
   ],
+  about: about,
 };
 
 export default en;
