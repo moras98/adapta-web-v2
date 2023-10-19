@@ -2,12 +2,12 @@ import { Outlet } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
 import Footer from '../../components/Footer/Footer';
 
-export default function Layout({lenguage}){
+export default function Layout({language}){
 	return(
 		<>
-			<NavBar lenguage = {lenguage}/>
+			<NavBar language = {language}/>
 			<Outlet/>
-			<Footer lenguage = {lenguage}/>
+			<Footer language = {language}/>
 		</>
 	);
 }

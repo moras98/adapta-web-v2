@@ -1,29 +1,30 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import './NavBar.css'
+import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
-function NavBar({lenguage}){
-	const [menuOpen, setMenuOpen] = useState(false);
+function NavBar({language}){
+	// const [menuOpen, setMenuOpen] = useState(false);
 
-	const toggleMenu = () => {
-	setMenuOpen(!menuOpen);
-	}
+	// const toggleMenu = () => {
+	// setMenuOpen(!menuOpen);
+	// }
 
-	const closeMenu = () => {
-	setMenuOpen(false);
-	}
+	// const closeMenu = () => {
+	// setMenuOpen(false);
+	// }
 
 	return(
 		<div className="navbar">
 			<div className="navbar-elements">
 				<div className="nav-logo">
-					<NavLink to={lenguage === 'es' ? '/' : '/en'}>
+					<NavLink to={language === 'es' ? '/' : '/en'}>
 						<img src="/assets/images/logo-adapta.png" alt="adapta-logo"/>
 					</NavLink>
 				</div>
 				<div className="nav-ul-container">
-					{lenguage === 'es' ? <EsNavbar /> : <EnNavbar />}
+					{language === 'es' ? <EsNavbar /> : <EnNavbar />}
 				</div>
 			</div>
 		</div>
@@ -75,6 +76,7 @@ function EnNavbar(){
 				Contact
 				</NavLink>
 			</li>
+			<li><LanguageSelector language={'en'}/></li>
 		</ul>
 	);
 }
@@ -122,6 +124,7 @@ function EsNavbar(){
 				Contacto
 				</NavLink>
 			</li>
+			<li><LanguageSelector language={'es'}/></li>
 		</ul>
 	);
 }

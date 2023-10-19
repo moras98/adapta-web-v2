@@ -1,7 +1,7 @@
 .project-grid-element {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	border-bottom: 3px solid green;
+	border-bottom: 3px solid #39ad00;
 }
 
 .project-texts {
@@ -18,10 +18,11 @@
 	text-align: justify;
 	width: 100%;
 	word-wrap: break-word;
+	color: gray;
 }
 
 .project-title {
-	color: green;
+	color: #39ad00;
 }
 
 .project-client {

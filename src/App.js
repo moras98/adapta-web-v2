@@ -15,18 +15,18 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout lenguage={'es'}/>}>
+        <Route path='/' element={<Layout language={'es'}/>}>
           <Route index element={<Home lenguaje={es}/>}/>
           <Route path='experiencia' element={<Experience lenguage={es}/>}/>
           <Route path='sobre-nosotros' element={ <About lenguage={es.about}/> }/>
-          <Route path='equipo' element={<Team lenguage={es}/>}/>
+          <Route path='equipo' element={<Team lenguage={es.team}/>}/>
           <Route path='contacto' element={<Contact lenguage={es}/>} />
         </Route>
-        <Route path='/en' element={<Layout lenguage={'en'}/>}>
+        <Route path='/en' element={<Layout language={'en'}/>}>
           <Route index element={<Home lenguaje={en}/>}/>
           <Route path='experience' element={<Experience lenguage={en}/>}/>
           <Route path='about-us' element={ <About lenguage={en.about}/> }/>
-          <Route path='team' element={<Team lenguage={en}/>}/>
+          <Route path='team' element={<Team lenguage={en.team}/>}/>
           <Route path='contact' element={<Contact lenguage={en}/>} />
         </Route>
       </Routes>

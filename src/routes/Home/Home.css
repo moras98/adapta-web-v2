@@ -1,29 +1,15 @@
-.content {
-	position: relative;
-	z-index: 1;
-	width: 100%;
-	background-color: #f0f0f0;
-}
-.phrase-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 5% 10%;
-	background-color: white;
-	color: green;
-}
 .experience-section {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    background-color: green;
+    /* background-color: #39ad00; */
+	background-color: white;
 	padding: 40px 0px;
 }
 .experience-section h2 {
-	color: white;
+	color: #39ad00;
 }
 .services-section {
 	width: 100%;
@@ -31,9 +17,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
+	/* background-color: white; */
 	padding: 40px 0px;
 }
 .services-section h2 {
-	color: green;
+	color: #39ad00;
 }

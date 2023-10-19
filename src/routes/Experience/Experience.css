@@ -1,0 +1,8 @@
+.experience-info-section {
+    background-color: white;
+    /* width: 100%; */
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}

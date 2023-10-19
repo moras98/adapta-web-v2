@@ -1,7 +1,9 @@
 import { areas_es } from "./areas";
+import { team } from "./routes/es/team";
 import { about } from "./routes/es/about";
 
 const es = {
+  language: 'es',
   main_title: 'ADAPTA INGENIERÍA AMBIENTAL',
   sub_title: 'ENERGÍA|INDUSTRIA|...',
   phrase_href: 'experiencia',
@@ -74,6 +76,7 @@ const es = {
     },
   ],
   about: about,
+  team: team,
 };
 
 export default es;

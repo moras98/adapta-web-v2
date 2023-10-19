@@ -1,21 +1,23 @@
-/* .about-section {
+/* OPCION 1 */
+.about-section {
     display: flex;
     padding: 5% 10%;
     justify-content: center;
     text-align: center;
     min-height: 10vh;
     text-align: justify;
-    background-color: green;
-    color: white;
-} */
-
+    background-color: white;
+    color: gray;
+}
+/* OPCION 2 */
+/* 
 .about-section {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     text-align: justify;
-    background-color: green;
+    background-color: #39ad00;
 }
 
 .about-img {
@@ -35,4 +37,4 @@
     padding: 10px;
     margin-right: 10%;
     color: white;
-}
+} */

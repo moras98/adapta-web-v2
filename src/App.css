@@ -38,3 +38,21 @@ a:visited {
 ul {
   list-style: none;
 }
+
+.content {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	background-color: #f0f0f0;
+}
+.phrase-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5% 10%;
+	/* background-color: white; */
+	color: #39ad00;
+  /* background-color: #39ad00; */
+  /* color: white; */
+}

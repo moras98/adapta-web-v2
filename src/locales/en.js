@@ -1,7 +1,9 @@
 import { areas_en } from "./areas";
 import { about } from "./routes/en/about";
+import { team } from "./routes/en/team";
 
 const en = {
+  language: 'en',
   main_title: 'ADAPTA ENGLISH',
   sub_title: 'Energy|Industry|...',
   experience_title: 'Experience',
@@ -75,6 +77,7 @@ const en = {
     },
   ],
   about: about,
+  team: team,
 };
 
 export default en;

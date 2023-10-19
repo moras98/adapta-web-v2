@@ -10,17 +10,19 @@ export default function About({lenguage}){
 				<div className="phrase-section">
 					<h2>{lenguage.phrase}</h2>
 				</div>
-				<div className="about-section">
+				{/* OPCION 2 */}
+				{/* <div className="about-section">
 					<div className="about-img">
 						<img src={lenguage.src} alt={lenguage.h1}/>
 					</div>
 					<div className="about-text">
 						<p>{lenguage.text}</p>
 					</div>
-				</div>
-				{/* <div className="about-section">
-					<p>{lenguage.text}</p>
 				</div> */}
+				{/* OPCION 1 */}
+				<div className="about-section">
+					<p>{lenguage.text}</p>
+				</div>
 			</div>
 		</div>
 	);
