@@ -1,0 +1,103 @@
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5% 10%;
+    background-color: white;
+}
+
+.contact-section h2 {
+    color: #39ad00;
+}
+
+  /* Estilos para el formulario de contacto */
+.contact-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; /* Reducido el espacio entre elementos */  
+    text-align: center;
+}
+
+
+/* Estilos para los campos del formulario */
+.contact-div input[type="text"],
+.contact-div input[type="email"],
+.contact-div textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+}
+
+.contact-div textarea {
+    height: 100px;
+}
+
+.contact-div input[type="text"]:focus,
+.contact-div input[type="email"]:focus,
+.contact-div textarea:focus {
+    border-color: #39ad00; /* Cambiar el color del borde al enfocar */
+}
+
+/* Estilos para el botón de enviar */
+.contact-div button[type="submit"] {
+    background-color: #39ad00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-div button[type="submit"]:hover {
+    background-color: darkgreen; /* Cambiar el color de fondo al pasar el ratón */
+}
+
+.secondary-form-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.secondary-form-section ul {
+    list-style: none;
+}
+
+.secondary-form-section li {
+    max-width: 300px;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width: 768px){
+#body-section {
+    grid-template-columns: 1fr;
+}
+
+.contact-div {
+    width: 100%;
+    box-shadow: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-div input[type="text"],
+.contact-div input[type="email"],
+.contact-div textarea {
+    padding: 10px 0px;
+}
+
+.secondary-form-section {
+    padding: 20px 0px;
+}
+}

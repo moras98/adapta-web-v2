@@ -13,7 +13,7 @@
 }
 
 .exp-grid-element h2 {
-    width: 100%;
+    width: 90%;
     z-index: 4;
     /* transform: translateX(-100%) translateY(100%);  */
     transition: all 1s ease; 
@@ -30,6 +30,7 @@
 
 .exp-grid-element img {
     z-index: 0;
+    height: 100%;
     object-fit: cover;
     transition: transform 1s ease;
 }

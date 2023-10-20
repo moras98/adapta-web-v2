@@ -1,7 +1,7 @@
 .project-grid-element {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	border-bottom: 3px solid #39ad00;
+	border-bottom: 2px solid #39ad00;
 }
 
 .project-texts {

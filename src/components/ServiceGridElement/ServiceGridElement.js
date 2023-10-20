@@ -8,7 +8,7 @@ export default function ServiceGridElement({src, title, text}){
 				<img src={src} alt={title + 'icon'}/>
 			</div>
 			<div className="service-description">
-				<h2>{title}</h2>
+				<p><b>{title}</b></p>
 				<p>{text}</p>
 			</div>
 		</div>

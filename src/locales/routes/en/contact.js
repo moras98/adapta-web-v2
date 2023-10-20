@@ -1,0 +1,15 @@
+export const contact = {
+    h1: 'Contact',
+    h2: '',
+    src: '/assets/images/adapta-contacto-3.jpg',
+    phrase: '',
+    form_title: 'Send us a message',
+    form_name: 'Name', 
+    form_mail: 'Email',
+    form_msg: 'Message',
+    form_send: 'Send',
+    other_title: 'Other ways to contact us',
+    other_phone: 'Phone',
+    other_mail: 'Email',
+    other_address: 'Address',
+}

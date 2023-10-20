@@ -23,3 +23,19 @@
 .services-section h2 {
 	color: #39ad00;
 }
+
+
+.clients-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    /* background-color: #39ad00; */
+	background-color: white;
+	padding: 40px 0px;
+	gap: 20px;
+}
+.clients-section h2 {
+	color: #39ad00;
+}

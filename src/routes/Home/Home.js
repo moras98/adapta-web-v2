@@ -4,27 +4,29 @@ import VideoFrame from "../../components/VideoFrame/VideoFrame";
 import { NavLink } from "react-router-dom";
 import ExperienceGrid from "../../components/ExperienceGrid/ExperineceGrid";
 import ServiceGrid from "../../components/ServiceGrid/ServiceGrid";
+import ClientsGrid from "../../components/ClientsGrid/ClientsGrid";
 
-export default function Home({lenguaje}){
+export default function Home({language}){
 	return(
 		<div className="body">
-			<VideoFrame src={'/assets/video2.mp4'} h1={lenguaje.main_title} h2={lenguaje.sub_title}/>
+			<VideoFrame src={'/assets/video2.mp4'} h1={language.main_title} h2={language.sub_title}/>
 			<div className="content">
 				<div className="phrase-section">
-					<h2>Frase</h2>
-					<NavLink to={lenguaje.phrase_href}>Saber más</NavLink>
+					<h2>{language.phrase}</h2>
+					<NavLink to={language.phrase_href}>Saber más</NavLink>
 				</div>
 				<div className="experience-section">
 					<h2>Nuestra Experiencia</h2>
-					<ExperienceGrid areas={lenguaje.areas}/>
+					<ExperienceGrid areas={language.areas}/>
 				</div>
 				<div className="services-section">
 					<h2>Nuestros Servicios</h2>
-					<ServiceGrid services={lenguaje.services}/>
+					<ServiceGrid services={language.services}/>
 				</div>
 				<div className="clients-section">
 					{/* agregar grid clients sections */}
 					<h2>Nuestros Clientes</h2>
+					<ClientsGrid/>
 				</div>
 			</div>
 		</div>

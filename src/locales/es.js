@@ -1,82 +1,16 @@
-import { areas_es } from "./areas";
 import { team } from "./routes/es/team";
 import { about } from "./routes/es/about";
+import { contact } from "./routes/es/contact";
+import { home } from "./routes/es/home";
+import { experience } from "./routes/es/experience";
 
 const es = {
   language: 'es',
-  main_title: 'ADAPTA INGENIERÍA AMBIENTAL',
-  sub_title: 'ENERGÍA|INDUSTRIA|...',
-  phrase_href: 'experiencia',
-  phrase: 'Frase',
-  areas: areas_es,
-  area1 : {
-    title: 'Area 1',
-    src: '/assets/images/area-agro-industrial-845x321.jpg'
-  },
-  area2 : {
-    title: 'Area 1',
-    src: '/assets/images/area-agro-industrial-845x321.jpg'
-  },
-  area3 : {
-    title: 'Area 1',
-    src: '/assets/images/area-agro-industrial-845x321.jpg'
-  },
-  area4 : {
-    title: 'Area 1',
-    src: '/assets/images/area-agro-industrial-845x321.jpg'
-  },
-  area5 : {
-    title: 'Area 1',
-    src: '/assets/images/area-agro-industrial-845x321.jpg'
-  },
-  area6 : {
-    title: 'Area 1',
-    src: '/assets/images/area-agro-industrial-845x321.jpg'
-  },
-  services: [
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-    {
-      src: '/assets/images/icons/check.svg',
-      title: 'Servicio',
-      text: 'Texto Servicio'
-    },
-  ],
+  home: home,
+  experience: experience,
   about: about,
   team: team,
+  contact: contact,
 };
 
 export default es;

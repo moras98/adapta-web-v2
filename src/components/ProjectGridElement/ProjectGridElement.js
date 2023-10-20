@@ -5,7 +5,7 @@ export default function ProjectGridElement({project}){
 	return(
 		<div className="project-grid-element">
 			<div className="project-texts">
-				<h2 className="project-title"><b>{project.title}</b></h2>
+				<h2 className="project-title">{project.title}</h2>
 				<p>{project.description}</p>
 			</div>
 			<div className="project-client">

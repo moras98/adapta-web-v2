@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectGridElement from "../ProjectGridElement/ProjectGridElemen";
+import ProjectGridElement from "../ProjectGridElement/ProjectGridElement";
 import './ProjectGrid.css';
 
 export default function ProjectGrid({projects}){

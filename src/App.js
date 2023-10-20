@@ -16,18 +16,18 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout language={'es'}/>}>
-          <Route index element={<Home lenguaje={es}/>}/>
-          <Route path='experiencia' element={<Experience lenguage={es}/>}/>
-          <Route path='sobre-nosotros' element={ <About lenguage={es.about}/> }/>
-          <Route path='equipo' element={<Team lenguage={es.team}/>}/>
-          <Route path='contacto' element={<Contact lenguage={es}/>} />
+          <Route index element={<Home language={es.home}/>}/>
+          <Route path='experiencia' element={<Experience language={es.experience}/>}/>
+          <Route path='sobre-nosotros' element={ <About language={es.about}/> }/>
+          <Route path='equipo' element={<Team language={es.team}/>}/>
+          <Route path='contacto' element={<Contact language={es.contact}/>} />
         </Route>
         <Route path='/en' element={<Layout language={'en'}/>}>
-          <Route index element={<Home lenguaje={en}/>}/>
-          <Route path='experience' element={<Experience lenguage={en}/>}/>
-          <Route path='about-us' element={ <About lenguage={en.about}/> }/>
-          <Route path='team' element={<Team lenguage={en.team}/>}/>
-          <Route path='contact' element={<Contact lenguage={en}/>} />
+          <Route index element={<Home language={en.home}/>}/>
+          <Route path='experience' element={<Experience language={en.experience}/>}/>
+          <Route path='about-us' element={ <About language={en.about}/> }/>
+          <Route path='team' element={<Team language={en.team}/>}/>
+          <Route path='contact' element={<Contact language={en.contact}/>} />
         </Route>
       </Routes>
     </BrowserRouter>
