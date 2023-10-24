@@ -5,16 +5,6 @@ import './NavBar.css'
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
 
 function NavBar({language}){
-	// const [menuOpen, setMenuOpen] = useState(false);
-
-	// const toggleMenu = () => {
-	// setMenuOpen(!menuOpen);
-	// }
-
-	// const closeMenu = () => {
-	// setMenuOpen(false);
-	// }
-
 	return(
 		<div className="navbar">
 			<div className="navbar-elements">

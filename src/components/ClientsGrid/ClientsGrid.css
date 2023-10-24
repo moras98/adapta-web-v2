@@ -17,3 +17,19 @@
     max-height: 150px;
     max-width: 150px;
 }
+
+@media (max-width: 850px){
+    .clients-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .clients-grid div {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .clients-grid img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}

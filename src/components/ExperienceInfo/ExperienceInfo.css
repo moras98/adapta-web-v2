@@ -20,3 +20,21 @@
 	top: -25%;
 }
 
+@media (max-width: 850px){
+
+	.experience-info-container{
+		margin: 0 0;
+		width: 100%;
+	}
+
+	.experience-info-img {
+		object-fit: contain;
+		height: 15vh;
+	}
+
+	.experience-info-img img {
+		width: 100%;
+		height: auto;
+		top: 0;
+	}
+}

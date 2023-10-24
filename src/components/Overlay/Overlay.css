@@ -10,3 +10,10 @@
 .overlay h1, .overlay h2 {
 	margin-left: 10%;
 }
+
+@media (max-width: 850px){
+	.overlay h1, .overlay h2 {
+		margin-left: 0%;
+		text-align: center;
+	}
+}
