@@ -189,7 +189,7 @@ export const projects_es = {
         new Project('Plantación forestal', 'Autorizaciones ambientales.', [clients.martinelli]),
     ],
     area14: [
-        new Project('Planta de producción de envases y Planta de Reciclaje de envases', 'Due Diligence fase I', [clients.ancap]),
-        new Project('Planta de producción de morteros', 'Due Diligence fase I', [clients.ancap]),
+        new Project('Planta de producción de envases y Planta de Reciclaje de envases', 'Due Diligence fase I', [clients.envase_mexico]),
+        new Project('Planta de producción de morteros', 'Due Diligence fase I', [clients.urumix]),
     ],
 };

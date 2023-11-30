@@ -82,3 +82,5 @@ export const mantiba = new Client('Mantiba', 'mantiba.jpg');
 export const bergstein = new Client('Bergstein', 'bergstein.jpg');
 export const fas = new Client('Forestal Atlántico Sur', 'fas.jgp');
 export const martinelli = new Client('Martinelli', 'martinelli.jpg');
+export const envase_mexico = new Client('Envases Universales de México S.A.P.I de CV', 'envases_mexico.jpg');
+export const urumix = new Client('Urumix S.A.', 'urumix.jpg');
