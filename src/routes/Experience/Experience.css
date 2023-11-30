@@ -6,3 +6,9 @@
     grid-template-columns: 1fr;
     gap: 50px;
 }
+
+@media (max-width: 850px){
+    .experience-info-section {
+        padding: 0px;
+    }
+}

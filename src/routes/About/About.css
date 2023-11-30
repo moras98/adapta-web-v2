@@ -89,3 +89,21 @@
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 850px){
+    .about-section {
+        grid-template-columns: 1fr;
+        padding: 10%;
+        gap: 50px;
+    }
+
+    .text-about h2 {
+        text-align: center;
+    }
+
+    .numbers-section {
+        grid-template-columns: 1fr;
+        padding: 10%;
+        gap: 100px;
+    }
+}

@@ -37,3 +37,22 @@
 	height: 150px;
 	width: auto;
 }
+
+
+@media (max-width: 850px){
+	.project-grid-element {
+		grid-template-columns: 1fr;
+	}
+
+	.project-texts {
+		align-items: center;
+	}
+
+	.project-texts p {
+		text-align: center;
+	}
+
+	.project-client img {
+		height: 100px;
+	}
+}

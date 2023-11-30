@@ -3,3 +3,7 @@
     font-size: 20px;
     margin-left: 50px;
 }
+
+@media (max-width: 850px){
+    .language-selector span {margin-left: 0px;}
+}
