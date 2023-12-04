@@ -1,13 +1,13 @@
 .clients-grid {
-    display: grid;
+    /* display: grid; */
     width: 80%;
-    grid-template-columns: repeat(9, 1fr);
+    /* grid-template-columns: repeat(9, 1fr); */
 }
 
 .clients-grid div {
     display: flex;
-    max-height: 150px;
-    max-width: 150px;
+    /* max-height: 150px;
+    max-width: 150px; */
     align-items: center;
     justify-content: center;
 }
@@ -33,3 +33,5 @@
         max-height: 100px;
     }
 }
+
+
