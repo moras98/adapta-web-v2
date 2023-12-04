@@ -4,6 +4,7 @@ import ProjectGrid from "../ProjectGrid/ProjectGrid";
 import './ExperienceInfo.css';
 
 export default function ExperienceInfo({area}){
+	console.log(area);
 	return(
 		<div className="experience-info-container">
 			<div className="experience-info-img">
