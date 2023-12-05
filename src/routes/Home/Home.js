@@ -4,7 +4,8 @@ import VideoFrame from "../../components/VideoFrame/VideoFrame";
 import { NavLink } from "react-router-dom";
 import ExperienceGrid from "../../components/ExperienceGrid/ExperineceGrid";
 import ServiceGrid from "../../components/ServiceGrid/ServiceGrid";
-import ClientsGrid from "../../components/ClientsGrid/ClientsGrid";
+// import ClientsGrid from "../../components/ClientsGrid/ClientsGrid";
+import ClientsCarousel from "../../components/ClientsCarousel/ClientsCarousel";
 
 export default function Home({language}){
 	return(
@@ -26,7 +27,8 @@ export default function Home({language}){
 				<div className="clients-section">
 					{/* agregar grid clients sections */}
 					<h2>Nuestros Clientes</h2>
-					<ClientsGrid/>
+					{/* <ClientsGrid/> */}
+					<ClientsCarousel/>
 				</div>
 			</div>
 		</div>
