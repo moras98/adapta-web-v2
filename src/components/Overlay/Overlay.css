@@ -8,7 +8,7 @@
 	flex-direction: column-reverse;
 }
 .overlay h1, .overlay h2 {
-	margin-left: 10%;
+	margin-left: 10px;
 }
 
 @media (max-width: 850px){
