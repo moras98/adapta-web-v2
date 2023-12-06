@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 // import { useState } from "react";
 import './NavBar.css'
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
@@ -33,6 +34,9 @@ function EnNavbar(){
 				>
 				Home
 				</NavLink>
+			</li>
+			<li>
+				<HashLink to="/en#services">Services</HashLink>
 			</li>
 			<li>
 				<NavLink 
@@ -81,6 +85,9 @@ function EsNavbar(){
 				>
 				Inicio
 				</NavLink>
+			</li>
+			<li>
+				<HashLink to="/#services">Servicios</HashLink>
 			</li>
 			<li>
 				<NavLink 

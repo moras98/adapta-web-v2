@@ -7,6 +7,9 @@ export default function LanguageSelector({ language }) {
     if (currentPath === '/'){
       return  '/en'
     }
+    if (currentPath === '/#services'){
+      return  '/en'
+    }
     if (currentPath === '/experiencia'){
       return '/en/experience'
     }
@@ -23,6 +26,9 @@ export default function LanguageSelector({ language }) {
 
   const spanishPaths = (currentPath) => {
     if (currentPath === '/en'){
+      return  '/'
+    }
+    if (currentPath === '/en#services'){
       return  '/'
     }
     if (currentPath === '/en/experience'){

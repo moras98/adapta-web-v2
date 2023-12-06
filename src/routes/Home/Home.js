@@ -18,9 +18,9 @@ export default function Home({language}){
 				</div>
 				<div className="experience-section">
 					<h2>Nuestra Experiencia</h2>
-					<ExperienceGrid areas={language.areas}/>
+					<ExperienceGrid areas={language.categories}/>
 				</div>
-				<div className="services-section">
+				<div id="services" className="services-section">
 					<h2>Nuestros Servicios</h2>
 					<ServiceGrid services={language.services}/>
 				</div>
