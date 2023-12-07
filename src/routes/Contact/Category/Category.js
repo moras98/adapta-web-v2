@@ -1,8 +1,9 @@
 import React from "react";
 import ImageFrame from "../../../components/ImageFrame/ImageFrame";
-import './Categories.css';
+import ExperienceInfo from "../../../components/ExperienceInfo/ExperienceInfo";
+import './Category.css';
 
-export default function Categories({language}){
+export default function Category({language}){
     return(
         <div className="body">
             <ImageFrame src="/assets/images/banner.jpg" h1={language.h1} h2=""/>
@@ -10,7 +11,9 @@ export default function Categories({language}){
                 <div className="phrase-section">
                     <h2>{language.phrase}</h2>
                 </div>
-                <div className="categories-info-section"></div>
+                <div className="categories-info-section">
+                    {language.areas.map((area, index)=>{return <ExperienceInfo key={index} area={area}/>})}
+                </div>
             </div>
         </div>
     )

@@ -1,9 +1,8 @@
 import React from "react";
-import ExperienceInfo from "../../components/ExperienceInfo/ExperienceInfo";
+// import ExperienceInfo from "../../components/ExperienceInfo/ExperienceInfo";
 import ImageFrame from "../../components/ImageFrame/ImageFrame";
 import './Experience.css';
 import CategorieInfo from "../../components/CategorieInfo/CategorieInfo";
-import { useNavigate } from "react-router-dom";
 
 export default function Experience({language}){
 	return(
