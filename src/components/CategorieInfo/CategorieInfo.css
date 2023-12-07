@@ -18,6 +18,22 @@
 	width: 100%;
 	height: auto;
 	top: -25%;
+	transition: transform 1s ease;
+}
+
+.categorie-info-container:hover {
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.categorie-info-container:hover h2 {
+    /* transform: translateX(0) translateY(0); */
+    left: 5%;
+    bottom: 5%;
+}
+
+.categorie-info-container:hover img {
+    transform: scale(1.1);
 }
 
 @media (max-width: 850px){

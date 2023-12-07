@@ -1,7 +1,7 @@
 import React from "react";
 import Overlay from "../Overlay/Overlay";
 import './CategorieInfo.css';
-import AreasGrid from "../AreasGrid/AreasGrid";
+// import AreasGrid from "../AreasGrid/AreasGrid";
 import { useNavigate } from "react-router-dom";
 
 export default function CategorieInfo({categorie, index}){
@@ -19,14 +19,21 @@ export default function CategorieInfo({categorie, index}){
         navigate(url);
         window.scrollTo(0, 0);
     };
+    let h2 = '';
+    console.log(categorie.areas);
+    if (categorie.areas.length > 1) {
+        for (const area of categorie.areas) {
+            h2 += area.title +  ' | '
+        }
+    }
 
     return(
         <div className="categorie-info-container" onClick={handleCategorieClick}>
             <div className="categorie-info-img">
                 <img src={categorie.src} alt={categorie.title}/>
-                <Overlay h1={categorie.title} h2=""/>
+                <Overlay h1={categorie.title} h2={h2}/>
             </div>
-            {categorie.areas.length >1 ?<AreasGrid areas={categorie.areas}/> : <></>}
+            {/* {categorie.areas.length >1 ?<AreasGrid areas={categorie.areas}/> : <></>} */}
         </div>
     );
 }
