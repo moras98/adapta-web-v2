@@ -16,7 +16,7 @@ export default function Experience({language}){
 					{language.areas.map((area, index)=>{return <ExperienceInfo key={index} area={area}/>})}
 				</div> */}
 				<div className="experience-info-section">
-					{language.categories.map((categorie, index)=><CategorieInfo key={index} categorie={categorie}/>)}
+					{language.categories.map((categorie, index)=><CategorieInfo key={index} categorie={categorie} index={index}/>)}
 				</div>
 			</div>
 		</div>

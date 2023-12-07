@@ -4,19 +4,20 @@ import './CategorieInfo.css';
 import AreasGrid from "../AreasGrid/AreasGrid";
 import { useNavigate } from "react-router-dom";
 
-export default function CategorieInfo({categorie}){
+export default function CategorieInfo({categorie, index}){
 
     const navigate = useNavigate();
 
     const handleCategorieClick = () => {
         // Obtén la categoría o cualquier otra información que necesites para construir la URL
-        const categoryName = categorie.title; // Ajusta según tu estructura de datos
+        // const categoryName = categorie.title; // Ajusta según tu estructura de datos
 
         // Construye la URL según la ruta y el idioma actual
-        const url = `${categoryName}`;
+        const url = `${index}`;
 
         // Realiza la redirección
         navigate(url);
+        window.scrollTo(0, 0);
     };
 
     return(

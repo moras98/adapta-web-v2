@@ -20,7 +20,7 @@ function App() {
           <Route index element={<Home language={es.home}/>}/>
           {/* <Route path='experiencia' element={<Experience language={es.experience}/>}/> */}
           <Route path='experiencia' element={<Experience language={es.categories}/>}/>
-          <Route path='experiencia/:category' element={<Category language={es.categories.categories[0]}/>}/> 
+          <Route path='experiencia/:category' element={<Category categories={es.categories.categories}/>}/> 
           <Route path='sobre-nosotros' element={ <About language={es.about}/> }/>
           <Route path='equipo' element={<Team language={es.team}/>}/>
           <Route path='contacto' element={<Contact language={es.contact}/>} />
@@ -29,7 +29,7 @@ function App() {
           <Route index element={<Home language={en.home}/>}/>
           {/* <Route path='experience' element={<Experience language={en.experience}/>}/> */}
           <Route path='experience' element={<Experience language={en.categories}/>}/>
-          <Route path='experience/:category' element={<Category language={en.categories.categories[0]}/>}/>
+          <Route path='experience/:category' element={<Category categories={en.categories.categories}/>}/>
           <Route path='about-us' element={ <About language={en.about}/> }/>
           <Route path='team' element={<Team language={en.team}/>}/>
           <Route path='contact' element={<Contact language={en.contact}/>} />
