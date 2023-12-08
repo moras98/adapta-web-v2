@@ -31,6 +31,9 @@ export const about = {
             text: 'organizaciones satisfechas',
         },
     ],
+    collaboration: {
+        h1: 'Hemos trabajado en conjunto con'
+    },
     contact: {
         title: 'Conócenos más',
         href: '/contacto',

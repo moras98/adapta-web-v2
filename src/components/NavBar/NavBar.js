@@ -40,7 +40,7 @@ function EnNavbar(){
 			</li>
 			<li>
 				<NavLink 
-				className={location.pathname === '/en/experience' ? "active-link" : ""}
+				className={location.pathname.includes('/en/experience') ? "active-link" : ""}
 				to="/en/experience"
 			>
 				Experience
@@ -92,7 +92,7 @@ function EsNavbar(){
 			<li>
 				<NavLink 
 				to="experiencia"
-				className={location.pathname === '/experiencia' ? "active-link" : ""}
+				className={location.pathname.includes('/experiencia') ? "active-link" : ""}
 				>
 				Experiencia
 				</NavLink>
