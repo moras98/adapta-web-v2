@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/adapta-web-v2/static/css/main.9cf888de.css",
+    "main.js": "/adapta-web-v2/static/js/main.a33347f4.js",
+    "static/js/787.96b84ab3.chunk.js": "/adapta-web-v2/static/js/787.96b84ab3.chunk.js",
+    "index.html": "/adapta-web-v2/index.html",
+    "main.9cf888de.css.map": "/adapta-web-v2/static/css/main.9cf888de.css.map",
+    "main.a33347f4.js.map": "/adapta-web-v2/static/js/main.a33347f4.js.map",
+    "787.96b84ab3.chunk.js.map": "/adapta-web-v2/static/js/787.96b84ab3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9cf888de.css",
+    "static/js/main.a33347f4.js"
+  ]
+}
