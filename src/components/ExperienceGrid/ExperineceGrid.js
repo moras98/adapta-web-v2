@@ -5,7 +5,7 @@ import './ExperienceGrid.css'
 export default function ExperienceGrid({areas}){
     return(
         <div className="experience-grid">
-            { areas.map((area, index) => <ExperienceGridElement key={index} src={area.src} h2={area.title}/>) }
+            { areas.map((area, index) => <ExperienceGridElement key={index} src={area.src} h2={area.title} index={index}/>) }
         </div>
     );
 }

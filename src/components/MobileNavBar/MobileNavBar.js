@@ -48,7 +48,7 @@ function MobileEsNav({closeMenu}){
 			<li>
 				<NavLink 
 				to="experiencia"
-				className={location.pathname === '/experiencia' ? "active-link" : ""}
+				className={location.pathname.includes('/experiencia') ? "active-link" : ""}
 				onClick={closeMenu}
 				>
 				Experiencia
@@ -101,7 +101,7 @@ function MobileEnNav({closeMenu}){
 			</li>
 			<li>
 				<NavLink 
-				className={location.pathname === '/en/experience' ? "active-link" : ""}
+				className={location.pathname.includes('/en/experience') ? "active-link" : ""}
 				to="/en/experience"
 				onClick={closeMenu}
 				>

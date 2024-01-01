@@ -1,7 +1,8 @@
 import React from "react";
-import ExperienceInfo from "../../components/ExperienceInfo/ExperienceInfo";
+// import ExperienceInfo from "../../components/ExperienceInfo/ExperienceInfo";
 import ImageFrame from "../../components/ImageFrame/ImageFrame";
 import './Experience.css';
+import CategorieInfo from "../../components/CategorieInfo/CategorieInfo";
 
 export default function Experience({language}){
 	return(
@@ -11,8 +12,11 @@ export default function Experience({language}){
 				<div className="phrase-section">
 					<h2>{language.phrase}</h2>
 				</div>
-				<div className="experience-info-section">
+				{/* <div className="experience-info-section">
 					{language.areas.map((area, index)=>{return <ExperienceInfo key={index} area={area}/>})}
+				</div> */}
+				<div className="experience-info-section">
+					{language.categories.map((categorie, index)=><CategorieInfo key={index} categorie={categorie} index={index}/>)}
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 // import { useState } from "react";
 import './NavBar.css'
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
@@ -35,8 +36,11 @@ function EnNavbar(){
 				</NavLink>
 			</li>
 			<li>
+				<HashLink to="/en#services">Services</HashLink>
+			</li>
+			<li>
 				<NavLink 
-				className={location.pathname === '/en/experience' ? "active-link" : ""}
+				className={location.pathname.includes('/en/experience') ? "active-link" : ""}
 				to="/en/experience"
 			>
 				Experience
@@ -83,9 +87,12 @@ function EsNavbar(){
 				</NavLink>
 			</li>
 			<li>
+				<HashLink to="/#services">Servicios</HashLink>
+			</li>
+			<li>
 				<NavLink 
 				to="experiencia"
-				className={location.pathname === '/experiencia' ? "active-link" : ""}
+				className={location.pathname.includes('/experiencia') ? "active-link" : ""}
 				>
 				Experiencia
 				</NavLink>

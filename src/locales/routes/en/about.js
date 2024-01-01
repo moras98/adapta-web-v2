@@ -20,17 +20,20 @@ export const about = {
     numbers: [
         {
             number: '7',
-            text: 'años ofreciendo el mejor servicio',
+            text: 'years providing the best service',
         },
         {
             number: '+50',
-            text: 'proyectos logrados',
+            text: 'achieved Projects',
         },
         {
             number: '+25',
-            text: 'organizaciones satisfechas',
+            text: 'satisfied Organizations',
         },
     ],
+    collaboration: {
+        h1: 'We have worked hand by hand with'
+    },
     contact: {
         title: 'Know more about us',
         href: '/en/contact',

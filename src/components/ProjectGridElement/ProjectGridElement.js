@@ -9,7 +9,9 @@ export default function ProjectGridElement({project}){
 				<p>{project.description}</p>
 			</div>
 			<div className="project-client">
-				<img src={project.client.src} alt={project.client.name}/>
+				{project.client.map((obj, index)=>{
+					return(<img key={index} src={obj.src} alt={obj.name}/>)
+				})}
 			</div>
 		</div>
 	);

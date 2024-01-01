@@ -36,7 +36,7 @@ export default function About({language}){
 				</div>
 
 				<div className="colaboration-section">
-					<h2>Hemos trabajdo mano a mano con</h2>
+					<h2>{language.collaboration.h1}</h2>
 				</div>
 
 				<div className="contact-guide-section">

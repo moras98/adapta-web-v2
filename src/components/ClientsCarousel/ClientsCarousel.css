@@ -1,0 +1,33 @@
+.clients-carousel {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+
+.clients-carousel .client {
+    display: flex;
+    max-height: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.clients-carousel img {
+    object-fit: cover;
+    max-height: 150px;
+    max-width: 150px;
+}
+
+@media (max-width: 850px) {
+    .clients-carousel .client {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .clients-carousel img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}

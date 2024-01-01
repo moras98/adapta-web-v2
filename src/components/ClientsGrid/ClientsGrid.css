@@ -6,8 +6,8 @@
 
 .clients-grid div {
     display: flex;
-    max-height: 150px;
-    max-width: 150px;
+    /* max-height: 150px;
+    max-width: 150px; */
     align-items: center;
     justify-content: center;
 }
@@ -33,3 +33,5 @@
         max-height: 100px;
     }
 }
+
+
