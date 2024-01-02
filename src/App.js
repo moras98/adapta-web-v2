@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='adapta-web-v2/' element={<Layout language={'es'}/>}>
+        <Route path='/' element={<Layout language={'es'}/>}>
           <Route index element={<Home language={es.home}/>}/>
           {/* <Route path='experiencia' element={<Experience language={es.experience}/>}/> */}
           <Route path='experiencia' element={<Experience language={es.categories}/>}/>
