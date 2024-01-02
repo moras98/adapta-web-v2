@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './routes/Layout/Layout';
 import Home from './routes/Home/Home';
 
@@ -14,7 +14,6 @@ import Category from './routes/Contact/Category/Category';
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout language={'es'}/>}>
           <Route index element={<Home language={es.home}/>}/>
@@ -35,7 +34,6 @@ function App() {
           <Route path='contact' element={<Contact language={en.contact}/>} />
         </Route>
       </Routes>
-    </BrowserRouter>
   );
 }
 
