@@ -3,6 +3,7 @@ import './MobileNavBar.css';
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import LanguageSelector from "../LanguageSelector/LanguageSelector";
+import { HashLink } from "react-router-hash-link";
 
 export default function MobileNavBar({language}){
     const [menuOpen, setMenuOpen] = useState(false);
@@ -44,6 +45,15 @@ function MobileEsNav({closeMenu}){
 				>
 				Inicio
 				</NavLink>
+			</li>
+			<li>
+				<HashLink 
+				to="/#services"
+				className={location.pathname.includes('/#services') ? "active-link" : ""}
+				onClick={closeMenu}
+				>
+				Servicios
+				</HashLink>
 			</li>
 			<li>
 				<NavLink 
@@ -98,6 +108,15 @@ function MobileEnNav({closeMenu}){
 				>
 				Home
 				</NavLink>
+			</li>
+			<li>
+				<HashLink 
+				to="/en#services"
+				className={location.pathname.includes('/en#services') ? "active-link" : ""}
+				onClick={closeMenu}
+				>
+				Servicios
+				</HashLink>
 			</li>
 			<li>
 				<NavLink 
