@@ -1,4 +1,5 @@
 {
+  "homepage": "https://moras98.github.io/adapta-web-v2",
   "name": "adapta-web-v2",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +19,6 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://moras98.github.io/adapta-web-v2",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
