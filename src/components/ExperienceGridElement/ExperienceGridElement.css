@@ -1,5 +1,5 @@
 .exp-grid-element {
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     transition: all 1s ease;
     overflow: hidden;
     display: flex;
@@ -13,7 +13,7 @@
 }
 
 .exp-grid-element h2 {
-    width: 90%;
+    width: 100%;
     z-index: 4;
     /* transform: translateX(-100%) translateY(100%);  */
     transition: all 1s ease; 
@@ -24,7 +24,7 @@
     /* color: transparent; */
     color: white;
     padding: 10px;
-    /* background-color: rgba(0, 0, 0, 0.226); */
+    background-color: rgba(0, 0, 0, 0.400);
     /* text-align: justify; */
 }
 
@@ -55,6 +55,7 @@
         width: 100%;
         max-height: 150px;
         transition: none;
+        filter: none;
     }
 
     .exp-grid-element img {
