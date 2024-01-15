@@ -6,7 +6,7 @@ export const home = {
     title: 'ADAPTA INGENIERÍA AMBIENTAL',
     sub_title: '',
     phrase: 'Frase',
-    phrase_href_txt: 'Saber más >',
+    phrase_href_txt: 'Sobre nosotros >',
     phrase_href: '/sobre-nosotros',
     exp_title: 'Nuestras áreas de experiencia',
     categories: categories_es,

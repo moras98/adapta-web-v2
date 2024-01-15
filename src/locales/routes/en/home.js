@@ -7,7 +7,7 @@ export const home = {
     sub_title: '',
     phrase: 'Phrase',
     categories: categories_en,
-    phrase_href_txt: 'Know more >',
+    phrase_href_txt: 'About us >',
     phrase_href: '/en/about-us',
     exp_title: 'Our areas of expertice',
     srv_title: 'Services we provide',

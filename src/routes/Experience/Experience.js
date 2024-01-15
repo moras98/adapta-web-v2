@@ -7,7 +7,7 @@ import CategorieInfo from "../../components/CategorieInfo/CategorieInfo";
 export default function Experience({language}){
 	return(
 		<div className="body">
-			<ImageFrame src="/assets/images/banner.jpg" h1={language.h1} h2=""/>
+			<ImageFrame src="/assets/images/experience-banner.jpg" h1={language.h1} h2=""/>
 			<div className="content">
 				<div className="phrase-section">
 					<h2>{language.phrase}</h2>
