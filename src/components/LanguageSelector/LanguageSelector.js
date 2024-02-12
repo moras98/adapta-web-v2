@@ -133,11 +133,18 @@ export default function LanguageSelector({ language }) {
   };
 
   return (
+    // <div className="language-selector">
+    //   {language === 'es' ? (
+    //     <span role="img" aria-label="English" onClick={() => changeLanguage(getEnglishPath)}>🇬🇧</span>
+    //   ) : (
+    //     <span role="img" aria-label="Español" onClick={() => changeLanguage(getSpanishPath)}>🇺🇾</span>
+    //   )}
+    // </div>
     <div className="language-selector">
       {language === 'es' ? (
-        <span role="img" aria-label="English" onClick={() => changeLanguage(getEnglishPath)}>🇬🇧</span>
+        <img src="/assets/images/flags/gb-flag.png" alt="English" style={{ width: '1.3em', height: '1.3em' }} onClick={() => changeLanguage(getEnglishPath)} />
       ) : (
-        <span role="img" aria-label="Español" onClick={() => changeLanguage(getSpanishPath)}>🇺🇾</span>
+        <img src="/assets/images/flags/uruguay-flag.png" alt="Español" style={{ width: '1.3em', height: '1.3em' }} onClick={() => changeLanguage(getSpanishPath)} />
       )}
     </div>
   );

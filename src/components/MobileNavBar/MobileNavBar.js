@@ -47,6 +47,15 @@ function MobileEsNav({closeMenu}){
 				</NavLink>
 			</li>
 			<li>
+				<NavLink 
+				to="sobre-nosotros"
+				className={location.pathname === '/sobre-nosotros' ? "active-link" : ""}
+				onClick={closeMenu}
+				>
+				Sobre nosotros
+				</NavLink>
+			</li>
+			<li>
 				<HashLink 
 				to="/#services"
 				className={location.pathname.includes('/#services') ? "active-link" : ""}
@@ -64,16 +73,7 @@ function MobileEsNav({closeMenu}){
 				Experiencia
 				</NavLink>
 			</li>
-			<li>
-				<NavLink 
-				to="sobre-nosotros"
-				className={location.pathname === '/sobre-nosotros' ? "active-link" : ""}
-				onClick={closeMenu}
-				>
-				Sobre nosotros
-				</NavLink>
-			</li>
-			<li>
+			{/* <li>
 				<NavLink 
 				to="equipo"
 				className={location.pathname === '/equipo' ? "active-link" : ""}
@@ -81,7 +81,7 @@ function MobileEsNav({closeMenu}){
 				>
 				Equipo
 				</NavLink>
-			</li>
+			</li> */}
 			<li>
 				<NavLink 
 				to="contacto"
@@ -110,6 +110,15 @@ function MobileEnNav({closeMenu}){
 				</NavLink>
 			</li>
 			<li>
+				<NavLink 
+				className={location.pathname === '/en/about-us' ? "active-link" : ""}
+				to="/en/about-us"
+				onClick={closeMenu}
+				>
+				About us
+				</NavLink>
+			</li>
+			<li>
 				<HashLink 
 				to="/en#services"
 				className={location.pathname.includes('/en#services') ? "active-link" : ""}
@@ -127,16 +136,7 @@ function MobileEnNav({closeMenu}){
 				Experience
 				</NavLink>
 			</li>
-			<li>
-				<NavLink 
-				className={location.pathname === '/en/about-us' ? "active-link" : ""}
-				to="/en/about-us"
-				onClick={closeMenu}
-				>
-				About us
-				</NavLink>
-			</li>
-			<li>
+			{/* <li>
 				<NavLink 
 				className={location.pathname === '/en/team' ? "active-link" : ""}
 				to="/en/team"
@@ -144,7 +144,7 @@ function MobileEnNav({closeMenu}){
 				>
 				Team
 				</NavLink>
-			</li>
+			</li> */}
 			<li>
 				<NavLink 
 				className={location.pathname === '/en/contact' ? "active-link" : ""}
