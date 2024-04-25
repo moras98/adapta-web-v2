@@ -12,8 +12,7 @@ export const home = {
   phrase_href: "/en/about-us",
   exp_title: "Our areas of expertice",
   srv_title: "Services we provide",
-  clt_title: "Clients who trusted us",
+  clt_title: "Clients who trust us",
   areas: areas_en,
   services: services_en,
 };
-

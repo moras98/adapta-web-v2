@@ -64,11 +64,7 @@ export const areas_en = [
     "/assets/images/forest.jpg",
     projects_en.area11,
   ),
-  new Area(
-    "Urban Developments",
-    "/assets/images/urban-banner.jpg",
-    projects_en.area12,
-  ),
+  new Area("", "/assets/images/urban-banner.jpg", projects_en.area12),
   new Area(
     "Forestry",
     "/assets/images/forestry-banner.jpg",
@@ -133,11 +129,7 @@ export const areas_es = [
     "/assets/images/area-recusos-hidricos-845x321.jpg",
     projects_es.area11,
   ),
-  new Area(
-    "Desarrollos urbanos",
-    "/assets/images/urban-banner.jpg",
-    projects_es.area12,
-  ),
+  new Area("", "/assets/images/urban-banner.jpg", projects_es.area12),
   new Area(
     "Forestal",
     "/assets/images/forestry-banner.jpg",

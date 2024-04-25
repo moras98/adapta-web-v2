@@ -12,8 +12,7 @@ export const home = {
   exp_title: "Nuestras áreas de experiencia",
   categories: categories_es,
   srv_title: "Servicios que proveemos",
-  clt_title: "Clientes que confiaron en nosotros",
+  clt_title: "Clientes que confían en nosotros",
   areas: areas_es,
   services: services_es,
 };
-

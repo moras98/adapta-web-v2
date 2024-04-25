@@ -99,6 +99,9 @@ function EsNavbar() {
           Sobre nosotros
         </NavLink>
       </li>
+      <li>
+        <HashLink to="/#services">Servicios</HashLink>
+      </li>
 
       <li>
         <NavLink
@@ -109,9 +112,6 @@ function EsNavbar() {
         >
           Experiencia
         </NavLink>
-      </li>
-      <li>
-        <HashLink to="/#services">Servicios</HashLink>
       </li>
       {/* <li>
 				<NavLink 

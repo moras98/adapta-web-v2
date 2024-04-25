@@ -1,0 +1,64 @@
+.service-card {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  border: 2px solid #39ad00;
+  margin-top: 50px;
+  transition: all ease 0.5s;
+}
+
+.service-card:hover {
+  transform: scale(1.2);
+  z-index: 99;
+  background-color: #39ad00;
+  color: white;
+}
+
+.service-card:hover h3 {
+  color: white;
+}
+
+.service-card:hover .service-circle {
+  background-color: #39ad00;
+}
+
+/* .service-card:hover img { */
+/*   filter: brightness(0) invert(1); */
+/* } */
+
+.service-circle {
+  position: absolute;
+  top: -44px; /* Ajustar según el tamaño del círculo */
+  right: 45px; /* Ajustar según el tamaño del círculo */
+  width: 80px; /* Tamaño del círculo */
+  height: 80px; /* Tamaño del círculo */
+  border: 2px solid #39ad00;
+  border-radius: 50%;
+  background-color: #39ad00; /* Color del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  /* Rotate the circle */
+  transform: rotate(135deg);
+}
+
+.service-card img {
+  height: 40px;
+  /* filter: invert(47%) sepia(62%) saturate(1758%) hue-rotate(64deg) */
+  /* brightness(95%) contrast(105%); */
+  filter: brightness(0) invert(1);
+  transform: rotate(-135deg);
+}
+
+.service-content {
+  padding: 20px; /* Ajustar según el tamaño del círculo */
+  /* Asegura que el contenido no se superponga con el círculo */
+}
+
+.service-content h3 {
+  color: #39ad00;
+}
