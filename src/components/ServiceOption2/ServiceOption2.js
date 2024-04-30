@@ -32,7 +32,7 @@ export default function ServiceOption2({ services }) {
           alignItems: "flex-start",
           gap: "10px",
           textAlign: "justify",
-          backgroundImage: "url('/assets/images/services_collage.png')",
+          backgroundImage: "url('/assets/images/services_collage.jpg')",
           backgroundSize: "cover",
           backgroundRepeat: "repeat",
         }}
