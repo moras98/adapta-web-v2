@@ -8,12 +8,12 @@
 
 h1 {
   font-size: 48px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 p {
@@ -57,14 +57,17 @@ ul {
   align-items: center;
   padding: 5% 10%;
   gap: 15px;
+  text-align: center;
+  background-size: cover;
+  background-image: url("../public/assets/images/pasto_blanco.png");
   /* background-color: white; */
   color: #39ad00;
   /* background-color: #39ad00; */
   /* color: white; */
 }
 
-.phrase-section h1 {
-  margin-bottom: 50px;
+.phrase-section h2 {
+  margin-bottom: 25px;
 }
 
 @media (max-width: 850px) {

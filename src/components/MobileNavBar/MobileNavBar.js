@@ -56,7 +56,7 @@ function MobileEsNav({ closeMenu }) {
         <NavLink
           to="sobre-nosotros"
           className={
-            location.pathname === "/sobre-nosotros" ? "active-link" : ""
+            location.pathname.includes("/sobre-nosotros") ? "active-link" : ""
           }
           onClick={closeMenu}
         >
@@ -125,7 +125,9 @@ function MobileEnNav({ closeMenu }) {
       </li>
       <li>
         <NavLink
-          className={location.pathname === "/en/about-us" ? "active-link" : ""}
+          className={
+            location.pathname.includes("/en/about-us") ? "active-link" : ""
+          }
           to="/en/about-us"
           onClick={closeMenu}
         >

@@ -47,6 +47,8 @@ export default function Home({ language }) {
           ) : (
             <ServiceGrid services={language.services} />
           )}
+          {/* <h2>{language.srv_title}</h2> */}
+          {/* <ServiceGrid services={language.services} /> */}
         </div>
         <div className="experience-section">
           <h2>{language.exp_title}</h2>

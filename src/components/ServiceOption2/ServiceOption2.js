@@ -18,7 +18,7 @@ export default function ServiceOption2({ services }) {
         width: "80%",
         display: "flex",
         flexDirection: "row",
-        height: "400px",
+        minHeight: "400px",
         gap: "20px",
       }}
     >
@@ -31,12 +31,32 @@ export default function ServiceOption2({ services }) {
           justifyContent: "center",
           alignItems: "flex-start",
           gap: "10px",
+          textAlign: "justify",
+          backgroundImage: "url('/assets/images/services_collage.png')",
+          backgroundSize: "cover",
+          backgroundRepeat: "repeat",
         }}
       >
-        <h2>
+        <h2 style={{ marginLeft: "10px" }}>
           {serviceSelected ? serviceSelected.title : "Servicios que proveemos"}
         </h2>
-        <p>{serviceSelected ? serviceSelected.text : ""}</p>
+        {/* <p> */}
+        {/*   {serviceSelected */}
+        {/*     ? serviceSelected.text */}
+        {/*     : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, leo accumsan dignissim hendrerit, lacus sem tincidunt nunc, at efficitur sapien ex a velit. Mauris volutpat erat quis dolor sollicitudin bibendum. Sed viverra odio massa, sit amet pharetra dolor auctor ac. Vivamus placerat faucibus vestibulum. Quisque a sodales massa. Donec euismod rhoncus quam, in mattis felis tristique nec. Fusce tincidunt massa eu congue mollis. Proin hendrerit augue at mattis tristique. Aenean congue pulvinar fermentum. Mauris nunc urna, efficitur vel feugiat eu, accumsan a est."} */}
+        {/* </p> */}
+        <p
+          style={{
+            margin: "0 10px",
+            // WebkitTextStrokeWidth: "1px",
+            // WebkitTextStrokeColor: "white",
+            fontWeight: 400,
+            fontSize: "18px",
+            color: "#39ad00",
+          }}
+        >
+          {serviceSelected ? serviceSelected.text : ""}
+        </p>
       </div>
       <div
         className="right-side"
@@ -81,6 +101,7 @@ function ServiceElement({ service, isSelected, onClick }) {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        height: "200px",
         gap: "15px",
         border: "3px solid #39ad00",
         transition: "all ease 0.5s",
@@ -95,6 +116,7 @@ function ServiceElement({ service, isSelected, onClick }) {
         zIndex: isHovered ? 99 : isSelected ? 99 : 10,
         cursor: "pointer",
         textAlign: "center",
+        padding: "15px",
       }}
     >
       <img

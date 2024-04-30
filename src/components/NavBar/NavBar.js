@@ -36,7 +36,9 @@ function EnNavbar() {
       </li>
       <li>
         <NavLink
-          className={location.pathname === "/en/about-us" ? "active-link" : ""}
+          className={
+            location.pathname.includes("/en/about-us") ? "active-link" : ""
+          }
           to="/en/about-us"
         >
           About us
@@ -93,7 +95,7 @@ function EsNavbar() {
         <NavLink
           to="sobre-nosotros"
           className={
-            location.pathname === "/sobre-nosotros" ? "active-link" : ""
+            location.pathname.includes("/sobre-nosotros") ? "active-link" : ""
           }
         >
           Sobre nosotros

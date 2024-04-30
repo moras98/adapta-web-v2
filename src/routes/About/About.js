@@ -28,20 +28,38 @@ export default function About({ language }) {
             return (
               <div key={index} className="number-element">
                 <h1>{obj.number}</h1>
-                <p>{obj.text?.toUpperCase()}</p>
+                <h3>{obj.text?.toUpperCase()}</h3>
               </div>
             );
           })}
         </div>
 
-        <div className="colaboration-section">
-          <h2>{language.collaboration.h1}</h2>
+        <div className="about-section">
+          {language.texts2.map((obj, index) => {
+            return (
+              <div key={index} className="text-about">
+                <h2>{obj.title}</h2>
+                <p>{obj.text}</p>
+                {obj.button ? (
+                  <Link className="button" to={obj.button.route}>
+                    <b>{obj.button.text.toUpperCase()}</b>
+                  </Link>
+                ) : (
+                  <></>
+                )}
+              </div>
+            );
+          })}
         </div>
+
+        {/* <div className="colaboration-section"> */}
+        {/*   <h2>{language.collaboration.h1}</h2> */}
+        {/* </div> */}
 
         <div className="contact-guide-section">
           {/* <h2>{language.contact.title}</h2> */}
           <Link className="button" to={language.contact.href}>
-            <b>{language.contact.text}</b>
+            <b>{language.contact.text.toUpperCase()}</b>
           </Link>
         </div>
       </div>

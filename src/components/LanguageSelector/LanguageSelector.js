@@ -63,66 +63,64 @@
 // }
 
 import React from "react";
-import './LanguageSelector.css';
+import "./LanguageSelector.css";
 
 export default function LanguageSelector({ language }) {
-
   const getEnglishPath = (currentPath) => {
-    if (currentPath.startsWith('/en')) {
+    if (currentPath.startsWith("/en")) {
       return currentPath;
     }
-  
+
     switch (currentPath) {
-      case '/':
-        return '/en';
-      case '/#services':
-        return '/en';
-      case '/experiencia':
-        return '/en/experience';
-      case '/equipo':
-        return '/en/team';
-      case '/sobre-nosotros':
-        return '/en/about-us';
-      case '/contacto':
-        return '/en/contact';
+      case "/":
+        return "/en";
+      case "/#services":
+        return "/en";
+      case "/experiencia":
+        return "/en/experience";
+      case "/sobre-nosotros/equipo":
+        return "/en/about-us/our-team";
+      case "/sobre-nosotros":
+        return "/en/about-us";
+      case "/contacto":
+        return "/en/contact";
       default:
         // Check if the path includes "/experiencia" and return "/experiencia" in that case
-        if (currentPath.includes('/experiencia')) {
-          return '/en/experience';
+        if (currentPath.includes("/experiencia")) {
+          return "/en/experience";
         }
         // If not, assume other paths start with '/en', so remove it
         return currentPath.slice(3);
-      }
     }
-  
+  };
+
   const getSpanishPath = (currentPath) => {
-    if (!currentPath.startsWith('/en')) {
+    if (!currentPath.startsWith("/en")) {
       return currentPath;
     }
-  
+
     switch (currentPath) {
-      case '/en':
-        return '/';
-      case '/en#services':
-        return '/';
-      case '/en/experience':
-        return '/experiencia';
-      case '/en/about-us':
-        return '/sobre-nosotros';
-      case '/en/team':
-        return '/equipo';
-      case '/en/contact':
-        return '/contacto';
+      case "/en":
+        return "/";
+      case "/en#services":
+        return "/";
+      case "/en/experience":
+        return "/experiencia";
+      case "/en/about-us":
+        return "/sobre-nosotros";
+      case "/en/about-us/our-team":
+        return "/sobre-nosotros/equipo";
+      case "/en/contact":
+        return "/contacto";
       default:
         // Check if the path includes "/experiencia" and return "/experiencia" in that case
-        if (currentPath.includes('/en/experience')) {
-          return '/experiencia';
+        if (currentPath.includes("/en/experience")) {
+          return "/experiencia";
         }
         // If not, assume other paths start with '/en', so remove it
         return currentPath;
-      }
     }
-  
+  };
 
   const changeLanguage = (getPathFunction) => {
     const currentPath = window.location.pathname;
@@ -132,20 +130,46 @@ export default function LanguageSelector({ language }) {
     }
   };
 
+  // return (
+  //   // <div className="language-selector">
+  //   //   {language === 'es' ? (
+  //   //     <span role="img" aria-label="English" onClick={() => changeLanguage(getEnglishPath)}>🇬🇧</span>
+  //   //   ) : (
+  //   //     <span role="img" aria-label="Español" onClick={() => changeLanguage(getSpanishPath)}>🇺🇾</span>
+  //   //   )}
+  //   // </div>
+  //   <div className="language-selector">
+  //     {language === 'es' ? (
+  //       <img src="/assets/images/flags/gb-flag.png" alt="English" style={{ width: '1.3em', height: '1.3em' }} onClick={() => changeLanguage(getEnglishPath)} />
+  //     ) : (
+  //       <img src="/assets/images/flags/uruguay-flag.png" alt="Español" style={{ width: '1.3em', height: '1.3em' }} onClick={() => changeLanguage(getSpanishPath)} />
+  //     )}
+  //   </div>
+  // );
   return (
-    // <div className="language-selector">
-    //   {language === 'es' ? (
-    //     <span role="img" aria-label="English" onClick={() => changeLanguage(getEnglishPath)}>🇬🇧</span>
-    //   ) : (
-    //     <span role="img" aria-label="Español" onClick={() => changeLanguage(getSpanishPath)}>🇺🇾</span>
-    //   )}
-    // </div>
     <div className="language-selector">
-      {language === 'es' ? (
-        <img src="/assets/images/flags/gb-flag.png" alt="English" style={{ width: '1.3em', height: '1.3em' }} onClick={() => changeLanguage(getEnglishPath)} />
-      ) : (
-        <img src="/assets/images/flags/uruguay-flag.png" alt="Español" style={{ width: '1.3em', height: '1.3em' }} onClick={() => changeLanguage(getSpanishPath)} />
-      )}
+      <img
+        src="/assets/images/flags/uruguay-flag.png"
+        alt="Español"
+        style={{
+          width: "1.3em",
+          height: "1.3em",
+          borderBottom:
+            language !== "es" ? "3px solid transparent" : "3px solid #39ad00",
+        }}
+        onClick={() => changeLanguage(getSpanishPath)}
+      />
+      <img
+        src="/assets/images/flags/gb-flag.png"
+        alt="English"
+        style={{
+          width: "1.3em",
+          height: "1.3em",
+          borderBottom:
+            language === "es" ? "3px solid transparent" : "3px solid #39ad00",
+        }}
+        onClick={() => changeLanguage(getEnglishPath)}
+      />
     </div>
   );
 }
