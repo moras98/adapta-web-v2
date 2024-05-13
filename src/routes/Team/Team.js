@@ -9,18 +9,25 @@ export default function Team({ language }) {
 
   const coordinators = [
     {
-      src: "",
+      src: "/assets/images/sandra.jpg",
       name: "Sandra Castro",
-      email: "s.castroscarone@gmail.com",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis nisl quis eros fringilla lacinia. Sed porttitor finibus ligula, ut sodales justo elementum sed. Nam vestibulum vel eros sit amet consequat. Maecenas in dui eget erat accumsan lobortis lobortis eget odio. Aliquam ante velit, consectetur at orci eget, hendrerit fermentum sem. Pellentesque et sapien in diam accumsan vestibulum. Nam ante enim, eleifend at mollis fermentum, varius a elit. Nunc eu justo finibus, sollicitudin est tincidunt, accumsan nisi. Nullam posuere ornare nisl, vitae fermentum justo ornare at. Integer nec libero a magna laoreet viverra. Donec finibus blandit libero at bibendum. Integer ut elementum orci. Donec efficitur augue quis laoreet vehicula. Nunc sit amet ullamcorper velit. Cras non orci odio.
+
+Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida tincidunt erat. Donec ullamcorper aliquet commodo. Sed tincidunt dolor ut mi porta, vitae pharetra eros varius. Proin vitae bibendum eros. Sed mauris ante, feugiat nec massa vel, ornare finibus augue. Cras ex lectus, ultrices malesuada dignissim nec, luctus eu lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.`,
+      email: "scastro@adapta.uy",
       rol: location.pathname.includes("/en") ? "Coordinator" : "Coordinadora",
       linkedin: "https://music.youtube.com/",
     },
     {
-      src: "",
+      src: "/assets/images/alessandra.jpg",
       name: "Alessandra Tiribocci",
+      description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis nisl quis eros fringilla lacinia. Sed porttitor finibus ligula, ut sodales justo elementum sed. Nam vestibulum vel eros sit amet consequat. Maecenas in dui eget erat accumsan lobortis lobortis eget odio. Aliquam ante velit, consectetur at orci eget, hendrerit fermentum sem. Pellentesque et sapien in diam accumsan vestibulum. Nam ante enim, eleifend at mollis fermentum, varius a elit. Nunc eu justo finibus, sollicitudin est tincidunt, accumsan nisi. Nullam posuere ornare nisl, vitae fermentum justo ornare at. Integer nec libero a magna laoreet viverra. Donec finibus blandit libero at bibendum. Integer ut elementum orci. Donec efficitur augue quis laoreet vehicula. Nunc sit amet ullamcorper velit. Cras non orci odio.
+
+Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida tincidunt erat. Donec ullamcorper aliquet commodo. Sed tincidunt dolor ut mi porta, vitae pharetra eros varius. Proin vitae bibendum eros. Sed mauris ante, feugiat nec massa vel, ornare finibus augue. Cras ex lectus, ultrices malesuada dignissim nec, luctus eu lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.`,
+
       rol: location.pathname.includes("/en") ? "Coordinator" : "Coordinadora",
-      email: "",
-      linkedin: "",
+      email: "atiribocchi@adapta.uy",
+      linkedin: "https://music.youtube.com/",
     },
   ];
 
@@ -47,62 +54,48 @@ export default function Team({ language }) {
             <div
               style={{
                 display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-evenly",
+                flexDirection: "column",
                 width: "100%",
+                gap: "30px",
               }}
             >
               {coordinators.map((obj, index) => (
-                <EmployeeCard obj={obj} key={index} />
+                <LeftEmployee obj={obj} key={index} />
               ))}
             </div>
-            <h2>Áreas</h2>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                justifyContent: "space-evenly",
-                flexWrap: "wrap",
-                width: "100%",
-              }}
-            >
-              <div>
-                <h3>Área</h3>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-              </div>
-              <div>
-                <h3>Área</h3>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-              </div>
-              <div>
-                <h3>Área</h3>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-              </div>
-              <div>
-                <h3>Área</h3>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-                <p>Nombre Apellido</p>
-              </div>
-            </div>
-            <h2>Colaboraciones</h2>
           </div>
+        </div>
+        <div className="employee-section">
+          <h2>No seríamos lo mismo sin ellos</h2>
+          <div
+            className="employee-grid"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "20px",
+              flexWrap: "wrap",
+              width: "100%",
+              marginTop: "50px",
+            }}
+          >
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
+          </div>
+        </div>
+        <div className="colaboration-section">
+          <h2>Profesionales con quienes colaboramos</h2>
         </div>
         <div className="phrase-section">
           {/* <h2>{language.phrase}</h2> */}
@@ -121,52 +114,120 @@ export default function Team({ language }) {
   );
 }
 
-function EmployeeCard({ obj }) {
+function LeftEmployee({ obj }) {
   return (
-    <div className="employee-card">
-      <img src={obj?.src} alt={obj?.name + "imagen"} style={{ flex: 1 }} />
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
+        height: "40vh",
+      }}
+    >
       <div
         style={{
-          backgroundColor: "green",
-          padding: "5px",
-          color: "white",
+          width: "20%",
+          borderRadius: "16px",
+          // objectFit: "cover",
+          overflow: "hidden",
+          backgroundColor: "blue",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <h3>{obj.name}</h3>
-        <h4>{obj.rol}</h4>
-        <div
+        <img
+          src={obj?.src}
+          alt={obj?.name + " imagen"}
           style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            marginTop: "10px",
+            height: "100%",
+            width: "auto",
+            objectFit: "cover",
+            filter: "grayscale(1)",
           }}
-        >
-          <img
-            style={{
-              width: "50px",
-              height: "50px",
-              filter: "brightness(0) invert(1)",
-              cursor: "pointer",
-            }}
-            src="/assets/images/icons/email.svg"
-            alt="email icon"
-            onClick={() => (window.location.href = "mailto:" + obj.email)}
-          />
-          <img
-            style={{
-              width: "50px",
-              height: "50px",
-              filter: "brightness(0) invert(1)",
-              cursor: "pointer",
-            }}
-            src="/assets/images/icons/linkedin.svg"
-            alt="email icon"
-            onClick={() => window.open(obj.linkedin, "_blank")}
-          />
-        </div>
+        />
       </div>
+      <div
+        style={{
+          width: "60%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          paddingLeft: "20px",
+          textAlign: "justify",
+          gap: "20px",
+        }}
+      >
+        <h2>
+          <b style={{ fontWeight: 200, color: "gray" }}>{obj.name}, </b>
+          <b style={{ fontWeight: 400 }}>{obj.rol}</b>
+        </h2>
+        <p>{obj?.description}</p>
+      </div>
+      <div
+        style={{
+          width: "20%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "center",
+          gap: "20px",
+          paddingLeft: "20px",
+        }}
+      >
+        <IconInformation
+          icon={"/assets/images/icons/linkedin.svg"}
+          text={obj.name}
+          url={obj.linkedin}
+        />
+        <IconInformation
+          icon={"/assets/images/icons/email.svg"}
+          text={obj.email}
+          url={"mailto:" + obj.email}
+        />
+      </div>
+    </div>
+  );
+}
+
+function IconInformation({ icon, text, url }) {
+  const openUrl = () => {
+    if (url.startsWith("mailto:")) {
+      window.location.href = url;
+    } else {
+      window.open(url, "_blank");
+    }
+  };
+  return (
+    <div className="icon-information-container" onClick={openUrl}>
+      <div className="icon-container">
+        <img src={icon} alt={text} />
+      </div>
+      <div className="text-container">
+        <p>{text}</p>
+      </div>
+    </div>
+  );
+}
+
+function SmallEmployee({ name, rol }) {
+  return (
+    <div
+      style={{
+        borderRadius: "8px",
+        backgroundColor: "white",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "10px",
+        width: "fit-content",
+        // border: "1px solid gray",
+        boxShadow: "2px 2px 2px 2px rgba(0, 0, 0, 0.1)",
+      }}
+    >
+      <h3>{rol}</h3>
+      <p style={{ color: "gray" }}>{name}</p>
     </div>
   );
 }

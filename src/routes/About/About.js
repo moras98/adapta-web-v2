@@ -41,7 +41,11 @@ export default function About({ language }) {
                 <h2>{obj.title}</h2>
                 <p>{obj.text}</p>
                 {obj.button ? (
-                  <Link className="button" to={obj.button.route}>
+                  <Link
+                    className="button"
+                    to={obj.button.route}
+                    onClick={() => window.scrollTo({ top: 0 })}
+                  >
                     <b>{obj.button.text.toUpperCase()}</b>
                   </Link>
                 ) : (
