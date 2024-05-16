@@ -56,7 +56,6 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
                 display: "flex",
                 flexDirection: "column",
                 width: "100%",
-                gap: "30px",
               }}
             >
               {coordinators.map((obj, index) => (
@@ -117,24 +116,10 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
 function LeftEmployee({ obj }) {
   return (
     <div
-      style={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "row",
-        height: "40vh",
-      }}
+      className="left-employee"
     >
       <div
-        style={{
-          width: "20%",
-          borderRadius: "16px",
-          // objectFit: "cover",
-          overflow: "hidden",
-          backgroundColor: "blue",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+        className="coordinator-img-container"
       >
         <img
           src={obj?.src}
@@ -157,6 +142,7 @@ function LeftEmployee({ obj }) {
           paddingLeft: "20px",
           textAlign: "justify",
           gap: "20px",
+          height: '100%',
         }}
       >
         <h2>
@@ -166,15 +152,16 @@ function LeftEmployee({ obj }) {
         <p>{obj?.description}</p>
       </div>
       <div
-        style={{
-          width: "20%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "center",
-          gap: "20px",
-          paddingLeft: "20px",
-        }}
+        // style={{
+        //   width: "20%",
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   alignItems: "flex-start",
+        //   justifyContent: "center",
+        //   gap: "20px",
+        //   paddingLeft: "20px",
+        // }}
+        className="coordinator-links"
       >
         <IconInformation
           icon={"/assets/images/icons/linkedin.svg"}

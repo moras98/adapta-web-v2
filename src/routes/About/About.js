@@ -60,7 +60,7 @@ export default function About({ language }) {
         {/*   <h2>{language.collaboration.h1}</h2> */}
         {/* </div> */}
 
-        <div className="contact-guide-section">
+        <div className="phrase-section">
           {/* <h2>{language.contact.title}</h2> */}
           <Link className="button" to={language.contact.href}>
             <b>{language.contact.text.toUpperCase()}</b>

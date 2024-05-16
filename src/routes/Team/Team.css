@@ -23,6 +23,34 @@
   color: #39ad00;
 }
 
+.left-employee {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 40vh;
+  margin-bottom: 10vh;
+}
+
+.coordinator-img-container {
+  width: 20%;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+
+.coordinator-links {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
 .colaboration-section {
   padding: 5% 10%;
   min-height: 10vh;
@@ -72,4 +100,34 @@
 
 .icon-information-container:hover .text-container {
   border-color: #39ad00;
+}
+
+
+@media (max-width: 850px) {
+  .left-employee {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-employee h2 {
+    text-align: left;
+  }
+
+  .coordinator-img-container {
+    width: fit-content;
+  }
+
+  .coordinator-links {
+    /* flex-direction: row; */
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-information-container {
+    width: 100%;
+    justify-content: center;
+  }
 }

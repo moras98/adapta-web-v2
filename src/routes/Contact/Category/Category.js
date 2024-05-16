@@ -3,7 +3,7 @@ import ImageFrame from "../../../components/ImageFrame/ImageFrame";
 import ExperienceInfo from "../../../components/ExperienceInfo/ExperienceInfo";
 import "./Category.css";
 import { useLocation, useParams } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function Category({ categories }) {
