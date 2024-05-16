@@ -30,6 +30,7 @@ function App() {
           <Route index element={<About language={es.about} />} />
           <Route path="equipo" element={<Team language={es.team} />} />
         </Route>
+        <Route path="equipo" element={<Team language={es.team}/>}/>
         <Route path="contacto" element={<Contact language={es.contact} />} />
       </Route>
       <Route path="/en" element={<Layout language={"en"} />}>
@@ -47,6 +48,7 @@ function App() {
           <Route index element={<About language={en.about} />} />
           <Route path="our-team" element={<Team language={en.team} />} />
         </Route>
+        <Route path="our-team" element={<Team language={en.team}/>}/>
         <Route path="contact" element={<Contact language={en.contact} />} />
       </Route>
     </Routes>

@@ -40,7 +40,7 @@ export default function About({ language }) {
               <div key={index} className="text-about">
                 <h2>{obj.title}</h2>
                 <p>{obj.text}</p>
-                {obj.button ? (
+                {/* {obj.button ? (
                   <Link
                     className="button"
                     to={obj.button.route}
@@ -50,7 +50,7 @@ export default function About({ language }) {
                   </Link>
                 ) : (
                   <></>
-                )}
+                )} */}
               </div>
             );
           })}

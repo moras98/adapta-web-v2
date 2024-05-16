@@ -64,6 +64,15 @@ function MobileEsNav({ closeMenu }) {
         </NavLink>
       </li>
       <li>
+				<NavLink 
+				to="equipo"
+				className={location.pathname === '/equipo' ? "active-link" : ""}
+				onClick={closeMenu}
+				>
+				Equipo
+				</NavLink>
+			</li>
+      <li>
         <HashLink
           to="/#services"
           className={
@@ -85,15 +94,6 @@ function MobileEsNav({ closeMenu }) {
           Experiencia
         </NavLink>
       </li>
-      {/* <li>
-				<NavLink 
-				to="equipo"
-				className={location.pathname === '/equipo' ? "active-link" : ""}
-				onClick={closeMenu}
-				>
-				Equipo
-				</NavLink>
-			</li> */}
       <li>
         <NavLink
           to="contacto"
@@ -135,6 +135,15 @@ function MobileEnNav({ closeMenu }) {
         </NavLink>
       </li>
       <li>
+				<NavLink 
+				className={location.pathname === '/en/our-team' ? "active-link" : ""}
+				to="/en/team"
+				onClick={closeMenu}
+				>
+				Team
+				</NavLink>
+			</li>
+      <li>
         <HashLink
           to="/en#services"
           className={
@@ -156,15 +165,6 @@ function MobileEnNav({ closeMenu }) {
           Experience
         </NavLink>
       </li>
-      {/* <li>
-				<NavLink 
-				className={location.pathname === '/en/team' ? "active-link" : ""}
-				to="/en/team"
-				onClick={closeMenu}
-				>
-				Team
-				</NavLink>
-			</li> */}
       <li>
         <NavLink
           className={location.pathname === "/en/contact" ? "active-link" : ""}

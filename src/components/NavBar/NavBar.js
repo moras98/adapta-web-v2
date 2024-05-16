@@ -45,6 +45,14 @@ function EnNavbar() {
         </NavLink>
       </li>
       <li>
+				<NavLink 
+				className={location.pathname === '/en/our-team' ? "active-link" : ""}
+				to="/en/team"
+			>
+				Team
+				</NavLink>
+			</li>
+      <li>
         <HashLink to="/en#services">Services</HashLink>
       </li>
       <li>
@@ -57,14 +65,6 @@ function EnNavbar() {
           Experience
         </NavLink>
       </li>
-      {/* <li>
-				<NavLink 
-				className={location.pathname === '/en/team' ? "active-link" : ""}
-				to="/en/team"
-			>
-				Team
-				</NavLink>
-			</li> */}
       <li>
         <NavLink
           className={location.pathname === "/en/contact" ? "active-link" : ""}
@@ -102,6 +102,14 @@ function EsNavbar() {
         </NavLink>
       </li>
       <li>
+				<NavLink 
+				to="equipo"
+				className={location.pathname === '/equipo' ? "active-link" : ""}
+				>
+				Equipo
+				</NavLink>
+			</li>
+      <li>
         <HashLink to="/#services">Servicios</HashLink>
       </li>
 
@@ -115,14 +123,6 @@ function EsNavbar() {
           Experiencia
         </NavLink>
       </li>
-      {/* <li>
-				<NavLink 
-				to="equipo"
-				className={location.pathname === '/equipo' ? "active-link" : ""}
-				>
-				Equipo
-				</NavLink>
-			</li> */}
       <li>
         <NavLink
           to="contacto"
