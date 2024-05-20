@@ -36,9 +36,23 @@ export default function Home({ language }) {
       <div className="content">
         <div className="phrase-section">
           <h2>{language.phrase}</h2>
-          <Link className="button" to={language.phrase_href}>
+          {/* <Link className="button" to={language.phrase_href}>
             <b>{language.phrase_href_txt.toUpperCase()}</b>
-          </Link>
+          </Link> */}
+        </div>
+        <div className="about-section-home">
+          <div className="left">
+            {/* <h2>Título 1</h2> */}
+            <p>Trabajamos con ética e integridad, priorizando el éxito de los proyectos en cada paso. Pensamos fuera de la caja y transformamos los desafíos en soluciones innovadoras. Conectamos a especialistas de todas las disciplinas necesarias para anticipar y resolver retos complejos</p>
+            <p>Contamos con un equipo de especialistas con amplia experiencia y conocimientos en el sector ambiental y social. Estamos comprometidos a ayudar a nuestros clientes a alcanzar sus objetivos ambientales y económicos. Ofrecemos soluciones innovadoras y personalizadas para cada cliente. Tenemos un historial probado de éxtio en la implementación de soluciones ambientales efectivas.</p>
+            <Link className="button" to={language.phrase_href}>
+              <b>{language.phrase_href_txt.toUpperCase()}</b>
+            </Link>
+          </div>
+          <div className="right" style={{
+            backgroundImage: "url('/assets/images/services_collage.jpg')",
+            backgroundSize: "cover",
+            backgroundRepeat: "repeat",}}></div>
         </div>
         <div id="services" className="services-section">
           {isMobile ? <h2>{language.srv_title}</h2> : <></>}

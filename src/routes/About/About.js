@@ -34,12 +34,12 @@ export default function About({ language }) {
           })}
         </div>
 
-        <div className="about-section">
+        {/* <div className="about-section">
           {language.texts2.map((obj, index) => {
             return (
               <div key={index} className="text-about">
                 <h2>{obj.title}</h2>
-                <p>{obj.text}</p>
+                <p>{obj.text}</p> */}
                 {/* {obj.button ? (
                   <Link
                     className="button"
@@ -51,10 +51,10 @@ export default function About({ language }) {
                 ) : (
                   <></>
                 )} */}
-              </div>
+              {/* </div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* <div className="colaboration-section"> */}
         {/*   <h2>{language.collaboration.h1}</h2> */}
