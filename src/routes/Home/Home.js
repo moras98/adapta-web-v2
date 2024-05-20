@@ -49,10 +49,10 @@ export default function Home({ language }) {
               <b>{language.phrase_href_txt.toUpperCase()}</b>
             </Link>
           </div>
-          <div className="right" style={{
+          {isMobile ? <></> : <div className="right" style={{
             backgroundImage: "url('/assets/images/services_collage.jpg')",
             backgroundSize: "cover",
-            backgroundRepeat: "repeat",}}></div>
+            backgroundRepeat: "repeat",}}></div>}
         </div>
         <div id="services" className="services-section">
           {isMobile ? <h2>{language.srv_title}</h2> : <></>}
