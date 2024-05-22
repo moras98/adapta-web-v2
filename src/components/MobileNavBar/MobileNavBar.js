@@ -137,7 +137,7 @@ function MobileEnNav({ closeMenu }) {
       <li>
 				<NavLink 
 				className={location.pathname === '/en/our-team' ? "active-link" : ""}
-				to="/en/team"
+				to="/en/our-team"
 				onClick={closeMenu}
 				>
 				Team

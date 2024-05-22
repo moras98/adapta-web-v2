@@ -82,6 +82,8 @@ export default function LanguageSelector({ language }) {
         return "/en/about-us/our-team";
       case "/sobre-nosotros":
         return "/en/about-us";
+      case "/equipo":
+        return "/en/our-team";
       case "/contacto":
         return "/en/contact";
       default:
@@ -110,6 +112,8 @@ export default function LanguageSelector({ language }) {
         return "/sobre-nosotros";
       case "/en/about-us/our-team":
         return "/sobre-nosotros/equipo";
+      case "/en/our-team":
+        return "/equipo";
       case "/en/contact":
         return "/contacto";
       default:

@@ -94,7 +94,7 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
           </div>
         </div> */}
         <div className="phrase-section">
-          <h2>Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea.</h2>
+          <h2>{language.phrase2}</h2>
         </div>
         <div className="employee-section">
           {/* <h3>En ADAPTA creemos en el poder de la colaboración para crear un futuro mejor para nuestros clientes, el planeta y las personas. Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y desarrollar soluciones personalizadas que les ayuden a alcanzar sus objetivos de sostenibilidad. Nos integramos a los equipos de nuestros clientes para brindarles el apoyo y la experiencia que necesitan para tener éxito. Estamos comprometidos a trabajar con nuestros clientes, socios y la comunidad global para crear un futuro más sostenible para todos.</h3> */}

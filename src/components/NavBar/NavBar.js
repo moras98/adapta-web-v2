@@ -47,7 +47,7 @@ function EnNavbar() {
       <li>
 				<NavLink 
 				className={location.pathname === '/en/our-team' ? "active-link" : ""}
-				to="/en/team"
+				to="/en/our-team"
 			>
 				Team
 				</NavLink>
