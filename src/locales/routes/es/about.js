@@ -32,16 +32,20 @@ Contamos con un equipo de ingenieros ambientales, biólogos, químicos, geólogo
 Hemos trabajado con más de ... empresas en diferentes sectores.
 Nuestro equipo de expertos está compuesto por más de ... profesionales altamente calificados.`,
     },
+    {
+      title: "¿Por qué elegirnos?",
+      text: "Contamos con un equipo de especialistas con amplia experiencia y conocimientos en el sector ambiental y social. Estamos comprometidos a ayudar a nuestros clientes a alcanzar sus objetivos ambientales y económicos. Ofrecemos soluciones innovadoras y personalizadas para cada cliente. Tenemos un historial probado de éxtio en la implementación de soluciones ambientales efectivas. Trabajamos con ética e integridad, priorizando el éxito de los proyectos en cada paso. Pensamos fuera de la caja y transformamos los desafíos en soluciones innovadoras. Conectamos a especialistas de todas las disciplinas necesarias para anticipar y resolver retos complejos.",
+    }
   ],
   texts2: [
+    // {
+    //   title: "Nuestro equipo",
+    //   text: "En ADAPTA creemos en el poder de la colaboración para crear un futuro mejor para nuestros clientes, el planeta y las personas. Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y desarrollar soluciones personalizadas que les ayuden a alcanzar sus objetivos de sostenibilidad. Nos integramos a los equipos de nuestros clientes para brindarles el apoyo y la experiencia que necesitan para tener éxito. Estamos comprometidos a trabajar con nuestros clientes, socios y la comunidad global para crear un futuro más sostenible para todos.",
+    //   button: { text: "Saber más >", route: "equipo" },
+    // },
     {
-      title: "Nuestro equipo",
-      text: "En ADAPTA creemos en el poder de la colaboración para crear un futuro mejor para nuestros clientes, el planeta y las personas. Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y desarrollar soluciones personalizadas que les ayuden a alcanzar sus objetivos de sostenibilidad. Nos integramos a los equipos de nuestros clientes para brindarles el apoyo y la experiencia que necesitan para tener éxito. Estamos comprometidos a trabajar con nuestros clientes, socios y la comunidad global para crear un futuro más sostenible para todos.",
-      button: { text: "Saber más >", route: "equipo" },
-    },
-    {
-      title: "Por qué elegirnos",
-      text: "Contamos con un equipo de especialistas con amplia experiencia y conocimientos en el sector ambiental y social. Estamos comprometidos a ayudar a nuestros clientes a alcanzar sus objetivos ambientales y económicos. Ofrecemos soluciones innovadoras y personalizadas para cada cliente. Tenemos un historial probado de éxtio en la implementación de soluciones ambientales efectivas.",
+      title: "¿Por qué elegirnos?",
+      text: "Contamos con un equipo de especialistas con amplia experiencia y conocimientos en el sector ambiental y social. Estamos comprometidos a ayudar a nuestros clientes a alcanzar sus objetivos ambientales y económicos. Ofrecemos soluciones innovadoras y personalizadas para cada cliente. Tenemos un historial probado de éxtio en la implementación de soluciones ambientales efectivas. Trabajamos con ética e integridad, priorizando el éxito de los proyectos en cada paso. Pensamos fuera de la caja y transformamos los desafíos en soluciones innovadoras. Conectamos a especialistas de todas las disciplinas necesarias para anticipar y resolver retos complejos.",
       button: null,
     },
     {

@@ -39,7 +39,7 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
           <h2>{language.phrase}</h2>
         </div>
         <div className="team-section">
-          <h2>{language.text}</h2>
+          {/* <h2>{language.text}</h2> */}
           <div
             className="team-grid"
             style={{
@@ -64,7 +64,7 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
             </div>
           </div>
         </div>
-        <div className="employee-section">
+        {/* <div className="employee-section">
           <h2>No seríamos lo mismo sin ellos</h2>
           <div
             className="employee-grid"
@@ -92,10 +92,46 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
             <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
             <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
           </div>
+        </div> */}
+        <div className="phrase-section">
+          <h2>Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea.</h2>
         </div>
-        <div className="colaboration-section">
+        <div className="employee-section">
+          {/* <h3>En ADAPTA creemos en el poder de la colaboración para crear un futuro mejor para nuestros clientes, el planeta y las personas. Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y desarrollar soluciones personalizadas que les ayuden a alcanzar sus objetivos de sostenibilidad. Nos integramos a los equipos de nuestros clientes para brindarles el apoyo y la experiencia que necesitan para tener éxito. Estamos comprometidos a trabajar con nuestros clientes, socios y la comunidad global para crear un futuro más sostenible para todos.</h3> */}
+          <div className="employee-area">
+            <div className="left">
+              <h2>Área</h2>
+            </div>
+            <div className="right">
+            <p>Nombre Apellido</p>
+            <p>Nombre Apellido</p>
+            <p>Nombre Apellido</p>
+            </div>
+          </div>
+          <div className="employee-area">
+            <div className="left">
+              <h2>Área</h2>
+            </div>
+            <div className="right">
+            <p>Nombre Apellido</p>
+            <p>Nombre Apellido</p>
+            <p>Nombre Apellido</p>
+            </div>
+          </div>
+          <div className="employee-area">
+            <div className="left">
+              <h2>Área</h2>
+            </div>
+            <div className="right">
+            <p>Nombre Apellido</p>
+            <p>Nombre Apellido</p>
+            <p>Nombre Apellido</p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="colaboration-section">
           <h2>Profesionales con quienes colaboramos</h2>
-        </div>
+        </div> */}
         <div className="phrase-section">
           {/* <h2>{language.phrase}</h2> */}
           {location.pathname.includes("/en") ? (
@@ -198,23 +234,23 @@ function IconInformation({ icon, text, url }) {
   );
 }
 
-function SmallEmployee({ name, rol }) {
-  return (
-    <div
-      style={{
-        borderRadius: "8px",
-        backgroundColor: "white",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: "10px",
-        width: "fit-content",
-        // border: "1px solid gray",
-        boxShadow: "2px 2px 2px 2px rgba(0, 0, 0, 0.1)",
-      }}
-    >
-      <h3>{rol}</h3>
-      <p style={{ color: "gray" }}>{name}</p>
-    </div>
-  );
-}
+// function SmallEmployee({ name, rol }) {
+//   return (
+//     <div
+//       style={{
+//         borderRadius: "8px",
+//         backgroundColor: "white",
+//         flexDirection: "column",
+//         justifyContent: "center",
+//         alignItems: "center",
+//         padding: "10px",
+//         width: "fit-content",
+//         // border: "1px solid gray",
+//         boxShadow: "2px 2px 2px 2px rgba(0, 0, 0, 0.1)",
+//       }}
+//     >
+//       <h3>{rol}</h3>
+//       <p style={{ color: "gray" }}>{name}</p>
+//     </div>
+//   );
+// }

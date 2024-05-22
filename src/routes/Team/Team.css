@@ -17,10 +17,15 @@
 
 .employee-section {
   padding: 5% 10%;
+  background-color: white;
   min-height: 10vh;
   width: 80%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
   color: #39ad00;
+  gap: 100px;
 }
 
 .left-employee {
@@ -100,6 +105,28 @@
 
 .icon-information-container:hover .text-container {
   border-color: #39ad00;
+}
+
+.employee-section h3 {
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+
+.employee-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.employee-area .left, .employee-area .right {
+  flex: 1;
+}
+
+.employee-area .right {
+  color: gray;
 }
 
 

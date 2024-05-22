@@ -17,6 +17,10 @@ export const about = {
       title: "What do we do?",
       text: `We have extensive experience in the following sectors: Industry, agriculture, tourism, construction, energy, mining, etc. Our team of experts specializes in the following areas: Environmental audits, sustainability strategies, waste management, energy efficiency, climate change, etc. We use the most validated technologies and methodologies to offer efficient and sustainable solutions. We have a team of environmental engineers, biologists, chemists, geologists, specialists (in climate change, waste management, energy efficiency, communication, cultural and historical heritage, gender issues), and other highly qualified professionals. We have worked with more than [number] companies in different sectors. Our team of experts consists of over [number] highly qualified professionals.`,
     },
+    {
+      title: "Why choose Us?",
+      text: "We have a team of specialists with extensive experience and knowledge in the environmental and social sector. We are committed to helping our clients achieve their environmental and economic goals. We offer innovative and personalized solutions for each client. We have a proven track record of success in implementing effective environmental solutions. We work with ethics and integrity, prioritizing project success at every step. We think outside the box and transform challenges into innovative solutions. We connect specialists from all necessary disciplines to anticipate and address complex challenges.",
+    }
   ],
   texts2: [
     {
@@ -26,7 +30,7 @@ export const about = {
     },
     {
       title: "Why choose Us?",
-      text: "We have a team of specialists with extensive experience and knowledge in the environmental and social sector. We are committed to helping our clients achieve their environmental and economic goals. We offer innovative and personalized solutions for each client. We have a proven track record of success in implementing effective environmental solutions.",
+      text: "We have a team of specialists with extensive experience and knowledge in the environmental and social sector. We are committed to helping our clients achieve their environmental and economic goals. We offer innovative and personalized solutions for each client. We have a proven track record of success in implementing effective environmental solutions. We work with ethics and integrity, prioritizing project success at every step. We think outside the box and transform challenges into innovative solutions. We connect specialists from all necessary disciplines to anticipate and address complex challenges.",
       button: null,
     },
     {
