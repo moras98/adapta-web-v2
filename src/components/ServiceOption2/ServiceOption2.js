@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ServiceOption2({ services }) {
+export default function ServiceOption2({ services, srv_title }) {
   const [serviceSelected, setServiceSelected] = useState(null);
 
   const handleClick = (service) => {
@@ -37,8 +37,8 @@ export default function ServiceOption2({ services }) {
           backgroundRepeat: "repeat",
         }}
       >
-        <h2 style={{ marginLeft: "10px" }}>
-          {serviceSelected ? serviceSelected.title : "Servicios que proveemos"}
+        <h2 style={{ marginLeft: "10px", width: '100%', textAlign: 'center' }}>
+          {serviceSelected ? serviceSelected.title : srv_title}
         </h2>
         {/* <p> */}
         {/*   {serviceSelected */}
@@ -53,6 +53,7 @@ export default function ServiceOption2({ services }) {
             fontWeight: 400,
             fontSize: "18px",
             color: "#39ad00",
+            textAlign: 'center'
           }}
         >
           {serviceSelected ? serviceSelected.text : ""}

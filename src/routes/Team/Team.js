@@ -132,9 +132,9 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
         {/* <div className="colaboration-section">
           <h2>Profesionales con quienes colaboramos</h2>
         </div> */}
-        <div className="phrase-section">
+        {/* <div className="phrase-section"> */}
           {/* <h2>{language.phrase}</h2> */}
-          {location.pathname.includes("/en") ? (
+          {/* {location.pathname.includes("/en") ? (
             <Link className="button" to={"/en/about-us"}>
               <b>GO BACK</b>
             </Link>
@@ -143,7 +143,7 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
               <b>VOLVER</b>
             </Link>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

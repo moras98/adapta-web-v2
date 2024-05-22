@@ -43,7 +43,7 @@ export default function Home({ language }) {
         <div id="services" className="services-section">
           {isMobile ? <h2>{language.srv_title}</h2> : <></>}
           {!isMobile ? (
-            <ServiceOption2 services={language.services} />
+            <ServiceOption2 services={language.services} srv_title={language.srv_title} />
           ) : (
             <ServiceGrid services={language.services} />
           )}
