@@ -182,10 +182,10 @@ function LeftEmployee({ obj }) {
         }}
       >
         <h2>
-          <b style={{ fontWeight: 200, color: "gray" }}>{obj.name}, </b>
-          <b style={{ fontWeight: 400 }}>{obj.rol}</b>
+          <b style={{ fontWeight: 200 }}>{obj.name}, </b>
+          <b style={{ fontWeight: 500 }}>{obj.rol}</b>
         </h2>
-        <p>{obj?.description}</p>
+        <p style={{color: 'gray'}}>{obj?.description}</p>
       </div>
       <div
         // style={{
