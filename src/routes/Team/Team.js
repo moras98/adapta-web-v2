@@ -2,7 +2,7 @@ import React from "react";
 import "./Team.css";
 import ImageFrame from "../../components/ImageFrame/ImageFrame";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Team({ language }) {
   const location = useLocation();
