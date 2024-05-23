@@ -15,9 +15,9 @@
 }
 
 .clients-carousel img {
-    object-fit: cover;
-    max-height: 150px;
-    max-width: 150px;
+    object-fit: contain;
+    max-height: 200px;
+    max-width: 200px;
 }
 
 @media (max-width: 850px) {

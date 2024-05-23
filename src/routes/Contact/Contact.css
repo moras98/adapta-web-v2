@@ -79,6 +79,10 @@
     margin: 0 0 15px 0;
 }
 
+.secondary-form-section {
+    color: gray;
+}
+
 @media (max-width: 768px){
 #body-section {
     grid-template-columns: 1fr;
