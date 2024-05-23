@@ -24,16 +24,20 @@
   background-color: #39ad00;
 }
 
+.service-card {
+  color: gray;
+}
+
 /* .service-card:hover img { */
 /*   filter: brightness(0) invert(1); */
 /* } */
 
 .service-circle {
   position: absolute;
-  top: -44px; /* Ajustar según el tamaño del círculo */
-  right: 45px; /* Ajustar según el tamaño del círculo */
-  width: 80px; /* Tamaño del círculo */
-  height: 80px; /* Tamaño del círculo */
+  top: -35px; /* Ajustar según el tamaño del círculo */
+  right: 35px; /* Ajustar según el tamaño del círculo */
+  width: 50px; /* Tamaño del círculo */
+  height: 50px; /* Tamaño del círculo */
   border: 2px solid #39ad00;
   border-radius: 50%;
   background-color: #39ad00; /* Color del círculo */
@@ -47,7 +51,7 @@
 }
 
 .service-card img {
-  height: 40px;
+  height: 20px;
   /* filter: invert(47%) sepia(62%) saturate(1758%) hue-rotate(64deg) */
   /* brightness(95%) contrast(105%); */
   filter: brightness(0) invert(1);
@@ -55,7 +59,7 @@
 }
 
 .service-content {
-  padding: 20px; /* Ajustar según el tamaño del círculo */
+  padding: 10px; /* Ajustar según el tamaño del círculo */
   /* Asegura que el contenido no se superponga con el círculo */
 }
 
