@@ -101,8 +101,15 @@
     gap: 50px;
   }
 
+  .text-about {
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+  }
+
   .text-about h2 {
-    text-align: center;
+    text-align: justify;
   }
 
   .numbers-section {

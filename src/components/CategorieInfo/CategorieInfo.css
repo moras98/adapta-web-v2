@@ -53,4 +53,12 @@
 		height: auto;
 		top: 0;
 	}
+
+	.categorie-info-container h1 {
+		font-size: 20px;
+	}
+
+	.categorie-info-container h2 {
+		font-size: 16px;
+	}
 }

@@ -23,6 +23,10 @@ export default function CategorieInfo({ categorie, index }) {
   for (const area of categorie.areas) {
     h2 += area.title + " | ";
   }
+
+  if (h2 === '| | '){
+    h2 = '';
+  }
   // }
 
   return (

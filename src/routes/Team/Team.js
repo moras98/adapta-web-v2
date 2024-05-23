@@ -169,17 +169,7 @@ function LeftEmployee({ obj }) {
         />
       </div>
       <div
-        style={{
-          width: "60%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start",
-          justifyContent: "center",
-          paddingLeft: "20px",
-          textAlign: "justify",
-          gap: "20px",
-          height: '100%',
-        }}
+        className="coordinator-texts"
       >
         <h2>
           <b style={{ fontWeight: 200 }}>{obj.name}, </b>

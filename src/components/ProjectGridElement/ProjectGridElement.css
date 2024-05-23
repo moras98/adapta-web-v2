@@ -48,6 +48,13 @@
 
 	.project-texts {
 		align-items: center;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.project-texts h2 {
+		font-size: 18px;
 	}
 
 	.project-texts p {
@@ -55,6 +62,7 @@
 	}
 
 	.project-client img {
-		height: 100px;
+		height: 200px;
+		width: 200px;
 	}
 }

@@ -37,4 +37,8 @@
 		height: auto;
 		top: 0;
 	}
+
+	.experience-info-container h1 {
+		font-size: 24px;
+	}
 }

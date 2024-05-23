@@ -14,7 +14,7 @@ export default function Home({ language }) {
   useEffect(() => {
     // Verificar si el dispositivo es móvil
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768); // Se considera móvil si el ancho de la pantalla es menor que 768px
+      setIsMobile(window.innerWidth < 850); // Se considera móvil si el ancho de la pantalla es menor que 768px
     };
 
     window.addEventListener("resize", handleResize); // Escuchar cambios en el tamaño de la ventana
@@ -40,7 +40,7 @@ export default function Home({ language }) {
             <b>{language.phrase_href_txt.toUpperCase()}</b>
           </Link>
         </div>
-        <div id="services" className="services-section">
+        <div id="services" className="services-section desktop">
           {isMobile ? <h2>{language.srv_title}</h2> : <></>}
           {!isMobile ? (
             <ServiceOption2 services={language.services} srv_title={language.srv_title} />
