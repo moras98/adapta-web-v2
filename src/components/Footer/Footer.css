@@ -36,5 +36,6 @@
         padding: 50px;
         grid-auto-flow: row;
         text-align: center;
+        gap: 50px;
     }
 }
