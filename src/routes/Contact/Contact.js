@@ -33,9 +33,9 @@ export default function Contact({ language }) {
         h2={language.h2}
       />
       <div className="content">
-        <div className="phrase-section">
+        {/* <div className="phrase-section">
           <h2>{language.phrase}</h2>
-        </div>
+        </div> */}
         <div className="contact-section">
           <div className="contact-div">
             <h2>{language.form_title}</h2>

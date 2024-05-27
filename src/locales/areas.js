@@ -21,7 +21,7 @@ export const areas_en = [
   ),
   new Area(
     "Exploitation and extraction",
-    "/assets/images/mining-banner.jpg",
+    "/assets/images/mining-banner-2.jpg",
     projects_en.area3,
   ),
   new Area(
@@ -64,13 +64,13 @@ export const areas_en = [
     "/assets/images/forest.jpg",
     projects_en.area11,
   ),
-  new Area("", "/assets/images/urban-banner.jpg", projects_en.area12),
+  new Area("", "/assets/images/urban-banner-2.jpg", projects_en.area12),
   new Area(
-    "Forestry",
-    "/assets/images/forestry-banner.jpg",
+    "",
+    "/assets/images/forestry-banner-2.jpg",
     projects_es.area13,
   ),
-  new Area("Others", "/assets/images/others-banner.jpg", projects_en.area14),
+  new Area("", "/assets/images/others-banner-2.jpg", projects_en.area14),
 ];
 
 export const areas_es = [
@@ -86,7 +86,7 @@ export const areas_es = [
   ),
   new Area(
     "Explotación y extracción",
-    "/assets/images/mining-banner.jpg",
+    "/assets/images/mining-banner-2.jpg",
     projects_es.area3,
   ),
   new Area(
@@ -129,11 +129,11 @@ export const areas_es = [
     "/assets/images/area-recusos-hidricos-845x321.jpg",
     projects_es.area11,
   ),
-  new Area("", "/assets/images/urban-banner.jpg", projects_es.area12),
+  new Area("", "/assets/images/urban-banner-2.jpg", projects_es.area12),
   new Area(
-    "Forestal",
-    "/assets/images/forestry-banner.jpg",
+    "",
+    "/assets/images/forestry-banner-2.jpg",
     projects_es.area13,
   ),
-  new Area("Otros", "/assets/images/others-banner.jpg", projects_es.area14),
+  new Area("", "/assets/images/others-banner-2.jpg", projects_es.area14),
 ];
