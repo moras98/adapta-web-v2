@@ -69,13 +69,13 @@
     background: linear-gradient(to right,rgba(255, 255, 255, 0), white);
 }
 
-/* .carousel:hover .clients-slide{
+.carousel:hover .clients-slide{
     animation-play-state: paused;
-} */
+}
 
 .clients-slide {
     display: inline-block;
-    animation: 100s slide infinite linear;
+    animation: 150s slide infinite linear;
 }
 
 .clients-slide img {
