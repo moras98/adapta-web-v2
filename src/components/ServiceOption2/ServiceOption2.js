@@ -37,7 +37,7 @@ export default function ServiceOption2({ services, srv_title }) {
           backgroundRepeat: "repeat",
         }}
       >
-        <h2 style={{ marginLeft: "10px", width: '100%', textAlign: 'center' }}>
+        <h2 style={{ marginLeft: "10px", width: '100%', textAlign: 'center', color: 'white' }}>
           {serviceSelected ? serviceSelected.title : srv_title}
         </h2>
         {/* <p> */}
@@ -50,10 +50,11 @@ export default function ServiceOption2({ services, srv_title }) {
             margin: "0 10px",
             // WebkitTextStrokeWidth: "1px",
             // WebkitTextStrokeColor: "white",
-            fontWeight: 400,
+            fontWeight: "400",
             fontSize: "18px",
-            color: "#39ad00",
-            textAlign: 'center'
+            // color: "#39ad00",
+            color: 'white',
+            textAlign: 'center',
           }}
         >
           {serviceSelected ? serviceSelected.text : ""}
