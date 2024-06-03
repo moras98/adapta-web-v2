@@ -79,7 +79,7 @@ export default function Contact({ language }) {
             <h2>{language.other_title}</h2>
             <ul>
               <li>
-                <b>{language.other_phone}:</b> (+598) 2408 8931
+                <b>{language.other_phone}:</b> (+598) 2706 7055
               </li>
               <li>
                 <b>{language.other_mail}:</b> info@adapta.uy
