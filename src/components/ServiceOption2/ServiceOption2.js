@@ -32,12 +32,12 @@ export default function ServiceOption2({ services, srv_title }) {
           alignItems: "flex-start",
           gap: "10px",
           textAlign: "justify",
-          backgroundImage: "url('/assets/images/services_collage-2.jpg')",
+          // backgroundImage: "url('/assets/images/services_collage-2.jpg')",
           backgroundSize: "cover",
           backgroundRepeat: "repeat",
         }}
       >
-        <h2 style={{ marginLeft: "10px", width: '100%', textAlign: 'center', color: 'white' }}>
+        <h2 style={{ marginLeft: "10px", width: '100%', textAlign: 'center', }}>
           {serviceSelected ? serviceSelected.title : srv_title}
         </h2>
         {/* <p> */}
@@ -53,7 +53,7 @@ export default function ServiceOption2({ services, srv_title }) {
             fontWeight: "400",
             fontSize: "18px",
             // color: "#39ad00",
-            color: 'white',
+            color: 'grey',
             textAlign: 'center',
           }}
         >
