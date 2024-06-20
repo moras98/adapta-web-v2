@@ -21,9 +21,16 @@ export default function Contact({ language }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes agregar la lógica para enviar el formulario, como una solicitud HTTP a tu servidor.
-    console.log("Datos del formulario:", formData);
+  
+    const subject = `Nuevo mensaje de ${formData.name}`;
+    const body = `Nombre: ${formData.name}\nCorreo: ${formData.email}\nMensaje: ${formData.message}`.replace(/\n/g, '%0D%0A');
+    const mailtoLink = `mailto:recipient@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+    console.log("Mailto link: ", mailtoLink); // Depuración
+    window.location.href = mailtoLink;
   };
+  
+  
 
   return (
     <div className="body">
@@ -72,7 +79,7 @@ export default function Contact({ language }) {
                   required
                 />
               </div>
-              <button type="submit">{language.form_send}</button>
+              <button type="submit" className="button">{language.form_send}</button>
             </form>
           </div>
           <div className="secondary-form-section">
