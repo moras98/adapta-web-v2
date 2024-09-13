@@ -2,7 +2,7 @@ import React from "react";
 import "./Team.css";
 import ImageFrame from "../../components/ImageFrame/ImageFrame";
 import { useLocation } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import TeamMemberGrid from "../../components/TeamMembers/TeamMemberGrid";
 
 export default function Team({ language }) {
   const location = useLocation();
@@ -64,86 +64,12 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
             </div>
           </div>
         </div>
-        {/* <div className="employee-section">
-          <h2>No seríamos lo mismo sin ellos</h2>
-          <div
-            className="employee-grid"
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: "20px",
-              flexWrap: "wrap",
-              width: "100%",
-              marginTop: "50px",
-            }}
-          >
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-            <SmallEmployee name={"Nombre Apellido"} rol={"Area X"} />
-          </div>
-        </div> */}
         <div className="phrase-section">
           <h2>{language.phrase2}</h2>
         </div>
         <div className="employee-section">
-          {/* <h3>En ADAPTA creemos en el poder de la colaboración para crear un futuro mejor para nuestros clientes, el planeta y las personas. Cada miembro de nuestro equipo está comprometido con la excelencia en el servicio al cliente y aporta una persepectiva única a la tarea. Trabajamos en estrecha colaboración con nuestros clientes para comprender sus necesidades y desarrollar soluciones personalizadas que les ayuden a alcanzar sus objetivos de sostenibilidad. Nos integramos a los equipos de nuestros clientes para brindarles el apoyo y la experiencia que necesitan para tener éxito. Estamos comprometidos a trabajar con nuestros clientes, socios y la comunidad global para crear un futuro más sostenible para todos.</h3> */}
-          <div className="employee-area">
-            <div className="left">
-              <h2>Área</h2>
-            </div>
-            <div className="right">
-            <p>Nombre Apellido</p>
-            <p>Nombre Apellido</p>
-            <p>Nombre Apellido</p>
-            </div>
-          </div>
-          <div className="employee-area">
-            <div className="left">
-              <h2>Área</h2>
-            </div>
-            <div className="right">
-            <p>Nombre Apellido</p>
-            <p>Nombre Apellido</p>
-            <p>Nombre Apellido</p>
-            </div>
-          </div>
-          <div className="employee-area">
-            <div className="left">
-              <h2>Área</h2>
-            </div>
-            <div className="right">
-            <p>Nombre Apellido</p>
-            <p>Nombre Apellido</p>
-            <p>Nombre Apellido</p>
-            </div>
-          </div>
+          <TeamMemberGrid/>
         </div>
-        {/* <div className="colaboration-section">
-          <h2>Profesionales con quienes colaboramos</h2>
-        </div> */}
-        {/* <div className="phrase-section"> */}
-          {/* <h2>{language.phrase}</h2> */}
-          {/* {location.pathname.includes("/en") ? (
-            <Link className="button" to={"/en/about-us"}>
-              <b>GO BACK</b>
-            </Link>
-          ) : (
-            <Link className="button" to={"/sobre-nosotros"}>
-              <b>VOLVER</b>
-            </Link>
-          )}
-        </div> */}
       </div>
     </div>
   );
