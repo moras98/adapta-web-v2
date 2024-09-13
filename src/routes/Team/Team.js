@@ -15,7 +15,7 @@ export default function Team({ language }) {
 
 Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida tincidunt erat. Donec ullamcorper aliquet commodo. Sed tincidunt dolor ut mi porta, vitae pharetra eros varius. Proin vitae bibendum eros. Sed mauris ante, feugiat nec massa vel, ornare finibus augue. Cras ex lectus, ultrices malesuada dignissim nec, luctus eu lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.`,
       email: "scastro@adapta.uy",
-      rol: location.pathname.includes("/en") ? "Coordinator" : "Coordinadora",
+      rol: location.pathname.includes("/en") ? "Partner-Director" : "Socia-Directora",
       linkedin: "https://music.youtube.com/",
     },
     {
@@ -25,7 +25,7 @@ Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida ti
 
 Donec a laoreet est. Mauris sapien turpis, ultrices eu justo lacinia, gravida tincidunt erat. Donec ullamcorper aliquet commodo. Sed tincidunt dolor ut mi porta, vitae pharetra eros varius. Proin vitae bibendum eros. Sed mauris ante, feugiat nec massa vel, ornare finibus augue. Cras ex lectus, ultrices malesuada dignissim nec, luctus eu lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.`,
 
-      rol: location.pathname.includes("/en") ? "Coordinator" : "Coordinadora",
+      rol: location.pathname.includes("/en") ? "Partner-Director" : "Socia-Directora",
       email: "atiribocchi@adapta.uy",
       linkedin: "https://music.youtube.com/",
     },
