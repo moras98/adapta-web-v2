@@ -82,3 +82,9 @@
     height: 20vh;
     margin: 0 20px;
 }
+
+@media (max-width: 850px) {
+    .clients-slide img {
+        height: 40vh;
+    }
+}

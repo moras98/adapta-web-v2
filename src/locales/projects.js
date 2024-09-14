@@ -74,7 +74,7 @@ export const projects_en = {
         new Project('Clean waste management circuit in Ciudad Vieja', 'roposal for a clean waste management circuit plan.', [clients.progretec, clients.camara_comercio]),
         new Project('Felipe Cardoso final disposal site', 'Environmental authorizations, Environmental Operation Authorization, engineering project for the expansion of the final disposal site.', [clients.imm]),
         new Project('Semi-automatic waste sorting plant', 'Environmental authorizations.', [clients.imm]),
-        new Project('National obsolete pesticide management plan', 'Preparation of the National plan for obsolete pesticide management, preliminary cost and financing estimate, preparation of terms of reference for the call to managers for plan implementation.', [clients.fao, clients.dinama]),
+        new Project('National obsolete pesticide management plan', 'Preparation of the National plan for obsolete pesticide management, preliminary cost and financing estimate, preparation of terms of reference for the call to managers for plan implementation.', [clients.fao, clients.m_ambiente]),
         new Project('Tire retreading plant', 'Waste management plan.', [clients.rolcon]),
     ],
     area11: [
@@ -168,7 +168,7 @@ export const projects_es = {
         new Project('Circuito limpio de gestión de residuos en Ciudad Vieja', 'Propuesta de plan de circuito limpio de gestión de residuos.', [clients.progretec, clients.camara_comercio]),
         new Project('Sitio de disposición final Felipe Cardoso', 'Autorizaciones ambientales, Autorización Ambiental de Operación, proyecto de ingeniería para la ampliación del sitio de disposición final.', [clients.imm]),
         new Project('Planta de clasificación semiautomática de residuos', 'Autorizaciones ambientales.', [clients.imm]),
-        new Project('Plan nacional de gestión de plaguicidas obsoletos', 'Elaboración del Plan nacional de gestión de plaguicidas obsoletos, estimación preliminar de costos y financiamiento, elaboración de los términos de referencia para el llamado a gestores para la implementación del plan de gestión de plaguicidas obsoletos.', [clients.fao, clients.dinama]),
+        new Project('Plan nacional de gestión de plaguicidas obsoletos', 'Elaboración del Plan nacional de gestión de plaguicidas obsoletos, estimación preliminar de costos y financiamiento, elaboración de los términos de referencia para el llamado a gestores para la implementación del plan de gestión de plaguicidas obsoletos.', [clients.fao, clients.m_ambiente]),
         new Project('Planta de recauchutaje de neumáticos', 'Plan de gestión de residuos.', [clients.rolcon]),
     ],
     area11: [
