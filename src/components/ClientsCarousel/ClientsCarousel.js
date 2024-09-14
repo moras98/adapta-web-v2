@@ -42,10 +42,36 @@ import './ClientsCarousel.css';
 
 export default function ClientsCarousel() {
 
-  const clientsArr = Object.keys(clients).map(key => ({
-    id: key,
-    ...clients[key]
-    }));
+    // const clientsArr = Object.keys(clients).map(key => ({
+    //     id: key,
+    //     ...clients[key]
+    // }));
+
+    const clientsArr = [
+        clients.alur, 
+        clients.ancap, 
+        clients.ute,
+        clients.bid,
+        clients.tether,
+        clients.hive,
+        clients.dh2,
+        clients.ccfc,
+        clients.imm,
+        clients.tgm,
+        clients.corporacion,
+        clients.typsa,
+        clients.jandenul,
+        clients.juan_go,
+        clients.upm,
+        clients.cielo_azul,
+        clients.cementos_artigas,
+        clients.proquimur,
+        clients.wsp,
+        // clients.forestier,
+        clients.typsa,
+        // clients.powerchina
+    ];
+
 
     return (
         <div className="carousel">

@@ -75,7 +75,7 @@
 
 .clients-slide {
     display: inline-block;
-    animation: 150s slide infinite linear;
+    animation: 60s slide infinite linear;
 }
 
 .clients-slide img {
